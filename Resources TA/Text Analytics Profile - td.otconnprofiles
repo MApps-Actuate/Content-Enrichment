@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DataTools.ServerProfiles version="1.0">
+	<profile autoconnect="No" desc="" id="68ab0820-01cf-11ec-9843-805a72a92c21" name="Pipeline" providerID="org.eclipse.birt.report.data.oda.jdbc">
+		<baseproperties>
+			<property name="odaURL" value="jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8888/magellan"/>
+			<property name="odaDriverClass" value="org.postgresql.Driver"/>
+			<property name="odaPassword" value="Mage11an"/>
+			<property name="odaUser" value="maguser"/>
+			<property name="contentBidiFormatStr" value="ILYNN"/>
+			<property name="metadataBidiFormatStr" value="ILYNN"/>
+		</baseproperties>
+	</profile>
+	<profile autoconnect="No" desc="" id="a7ebc521-01ce-11ec-9843-805a72a92c21" name="Crawler" providerID="org.eclipse.birt.report.data.oda.jdbc">
+		<baseproperties>
+			<property name="odaURL" value="jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8882/crawler_repository"/>
+			<property name="odaDriverClass" value="org.postgresql.Driver"/>
+			<property name="odaPassword" value="postgres"/>
+			<property name="odaUser" value="postgres"/>
+			<property name="contentBidiFormatStr" value="ILYNN"/>
+			<property name="metadataBidiFormatStr" value="ILYNN"/>
+		</baseproperties>
+	</profile>
+</DataTools.ServerProfiles>

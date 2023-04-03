@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <property name="units">in</property>
+    <property name="theme">defaultTheme</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <data-mart-data-source name="Text Analytics DO" id="5">
+            <property name="datamartURL">Resources TA/Data Objects/Text Analytics</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+        <data-mart-data-source name="Text Analytics Summary DO" id="1314">
+            <property name="datamartURL">Resources TA/Data Objects/Text Analytics Summary</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Crawler" id="1092">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>PostgresSupportSP</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8882/crawler_repository</property>
+            <property name="odaUser">postgres</property>
+            <property name="OdaConnProfileName">Crawler</property>
+            <property name="OdaConnProfileStorePath">Resources TA/Text Analytics Profile.otconnprofiles</property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Pipeline" id="2">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>PostgresSupportSP</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8888/magellan</property>
+            <property name="odaUser">maguser</property>
+            <property name="OdaConnProfileName">Pipeline</property>
+            <property name="OdaConnProfileStorePath">Resources TA/Text Analytics Profile.otconnprofiles</property>
+        </oda-data-source>
+    </data-sources>
+    <themes>
+        <theme name="defaultTheme" id="4"/>
+    </themes>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="3"/>
+    </page-setup>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="Documents" id="1316">
+            <property name="dataSource">Text Analytics DO</property>
+            <property name="dataObject">Documents</property>
+        </data-mart-linked-data-model>
+        <data-mart-linked-data-model name="Documents Summary" id="1332">
+            <property name="dataSource">Text Analytics Summary DO</property>
+            <property name="dataObject">Documents Summary</property>
+        </data-mart-linked-data-model>
+    </property>
+</library>

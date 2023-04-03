@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <list-property name="includeScripts">
+        <property>js/DynamicFilter.js</property>
+    </list-property>
+    <property name="units">in</property>
+    <method name="beforeFactory"><![CDATA[var elementHandle = reportContext.getDesignHandle().findElement("Documents List");
+if (elementHandle != null) {
+	if (params["prmKnowledgebase"].value != null &amp;&amp; !"".equals(params["prmKnowledgebase"].value )) {
+		addTableFilter(elementHandle, 'dataSetRow["kb_name"]', DesignChoiceConstants.FILTER_OPERATOR_EQ, 'params["prmKnowledgebase"].value');
+	}
+	if (params["prmCategoryID"].value != null &amp;&amp; !"".equals(params["prmCategoryID"].value )) {
+		addTableFilter(elementHandle, 'dataSetRow["categoryid"]', DesignChoiceConstants.FILTER_OPERATOR_EQ, 'params["prmCategoryID"].value');
+	}
+}
+]]></method>
+    <property name="theme">ThemesReportItems31.Modern</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">120</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+        <structure>
+            <property name="fileName">Report Libraries/CE Controls - Content Analysis.rptlibrary</property>
+            <property name="namespace">CE Controls - Content Analysis</property>
+        </structure>
+    </list-property>
+    <property name="responsiveReport">true</property>
+    <parameters>
+        <scalar-parameter name="prmCategoryID" id="1538">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="prmKnowledgebase" id="1540">
+            <text-property name="promptText">Knowledge Base</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <data-mart-data-source name="Text Analytics Data Source" id="40">
+            <property name="datamartURL">Data Objects/Text Analytics</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="Data Model" id="41">
+            <property name="dataSource">CE Controls - Content Analysis.Text Analytics Data Source</property>
+            <property name="dataObject">Data Model</property>
+        </data-mart-linked-data-model>
+    </property>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">auto</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table name="Documents List" id="1313" extends="CE Controls - Content Analysis.Documents List">
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">summary</property>
+                    <text-property name="displayName">summary</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["summary"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">name</property>
+                    <text-property name="displayName">name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">language</property>
+                    <text-property name="displayName">language</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["language"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">last_modification_date</property>
+                    <text-property name="displayName">Last Modification Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["last_modification_date"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">created_by</property>
+                    <text-property name="displayName">Created By</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["created_by"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">direct_link</property>
+                    <text-property name="displayName">Direct Link</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["direct_link"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Repository Name</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Repository Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">doc_id</property>
+                    <expression name="expression" type="javascript">dataSetRow["doc_id"]</expression>
+                    <property name="dataType">decimal</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">folder</property>
+                    <expression name="expression" type="javascript">dataSetRow["folder"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">mime_icon_name</property>
+                    <expression name="expression" type="javascript">dataSetRow["mime_icon_name"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">File Size Display</property>
+                    <expression name="expression" type="javascript">dataSetRow["File Size Display"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <overridden-values>
+                <ref-entry baseId="1500" id="1500"/>
+                <ref-entry baseId="1501" id="1501"/>
+                <ref-entry baseId="1502" id="1502"/>
+                <ref-entry baseId="1503" id="1503"/>
+                <ref-entry baseId="1504" id="1504">
+                    <property name="content">&lt;div id="docSummaryScript">&lt;/div>
+
+&lt;script>
+
+//$('*[iid="/0.1508"]').closest("tr").hide();
+$("#docSummaryScript").closest('tr').hide();
+
+var docSummaryExpandLength = 250;
+function showMoreDocSummary(imageIcon) {
+	debugger;
+	var docSummary = $(imageIcon).parent().data("doc_summary_full");
+	if (!docSummary) {
+		return;
+	}
+	$(imageIcon).parent().html("&lt;span> " + docSummary + "&lt;/span>" +  docSummaryLessControl);
+}
+
+function showLessDocSummary(imageIcon) {
+	debugger;
+	var docSummary = $(imageIcon).parent().data("doc_summary_full");
+	if (!docSummary) {
+		return;
+	}
+	$(imageIcon).parent().html("&lt;span> " + docSummary.substring(0, docSummaryExpandLength) + "...&lt;/span>" +  docSummaryMoreControl)
+}
+
+&lt;/script>
+&lt;script>
+
+debugger;
+
+$("&lt;style type='text/css'> .docSummaryMoreIcon { width:15px; height:15px;} .docSummaryMoreIcon:hover {cursor: pointer;} .docSummaryLessIcon { width:15px; height:15px;} .docSummaryLessIcon:hover {cursor: pointer;} .docMimeIcon {height:18px; width:18px;} &lt;/style>").appendTo("head");
+
+var images = $("#docSummaryScript").closest('tr').find("img");
+var i = 0;
+var docSummaryMoreImage;
+var docSummaryLessImage
+for (i = 0; i &lt; images.length; i++) {
+    if ($(images[i]).attr("alt") === "Show More") {
+        docSummaryMoreImage = $(images[i]);
+    } else if ($(images[i]).attr("alt") === "Show Less") {
+        docSummaryLessImage = $(images[i]);
+    }
+}
+var docSummaryMoreControl = "&lt;img src='" + $(docSummaryMoreImage).attr("src") + "' class='docSummaryMoreIcon' onclick='showMoreDocSummary(this);'>";
+var docSummaryLessControl = "&lt;img src='" + $(docSummaryLessImage).attr("src") + "' class='docSummaryMoreIcon' onclick='showLessDocSummary(this);'>";
+
+// Find the Summary controls by the elementID (specified in the control)
+//var summaryControls = $('*[iid="/0.1431"]');
+var summaryControls = $('*[element_name="docSummaryHolder"]').parent().next();
+
+for (i = 0; i &lt; summaryControls.length; i++) {
+		if (!$(summaryControls[i]).data("doc_summary_full")) {
+		var docSummary = $(summaryControls[i]).text()
+		$(summaryControls[i]).data("doc_summary_full", docSummary);
+		if (docSummary.length > docSummaryExpandLength) {
+			$(summaryControls[i]).html("&lt;span> " + docSummary.substring(0, docSummaryExpandLength) + "...&lt;/span>" +  docSummaryMoreControl)
+			//$(summaryControls[i]).append(docSummaryMoreControl);
+		}
+	}
+}
+// Pad grid entries
+//$('*[iid="/0.1487"]').children('.gridCell').css("padding", "5px");
+// Link to Document Detail
+var grids = $('*[element_name="docSummaryHolder"]').closest('[element_type="Grid"]');
+// Is this in Dashboard. Dashboard uses table for Grid.
+var isTable = $(grids[0]).prop('nodeName') === "TABLE";
+if (isTable) {
+	$(grids).find("tr").children().css("padding", "5px")
+} else {
+	$(grids).children('.gridCell').css("padding", "5px");
+}
+var docNameControl;
+for (i = 0; i &lt; grids.length; i++) {
+
+    if (isTable) {
+    	docNameControl = $(grids[i]).find("td").first();
+    } else {
+    	docNameControl = $(grids[i]).children().first();
+    }
+    $(docNameControl).css({"cursor" :"pointer"});
+    if (!isTable) {
+    	$(grids[i]).children().first().find("span").css({"line-height" : "20px", "vertical-align": "top"});
+    }
+
+    $(docNameControl).on("click", function() {
+    var loc = "";
+	regex = /Applications\/(.*?)\/;
+	if (regex.test(window.location.href)) {
+		loc = regex.exec(window.location.href)[1];
+	}
+	else {
+		regex = /Applications%2f(.*?)%2f;
+		if (regex.test(window.location.href)) {
+			loc = regex.exec(window.location.href)[1];
+		}
+		else {
+			console.log (window.location.href);
+			//debugger;
+			//alert ('Error ' + window.location.href);
+		}
+	}
+	url = "/iportal/executereport.do?__requesttype=immediate&amp;invokesubmit=true&amp;__executablename=/Applications/" + loc + "/Report Designs/Document Detail.rptdesign&amp;pDocId=" + $(this).closest("tr")[0].id.split('_')[1];
+	win = window.open(url, '_blank');
+	win.focus(); 
+  });
+	
+}
+
+&lt;/script></property>
+                    <property name="contentType">html</property>
+                </ref-entry>
+                <ref-entry baseId="1505" id="1505"/>
+                <ref-entry baseId="1506" id="1506"/>
+                <ref-entry baseId="1507" id="1507"/>
+                <ref-entry baseId="1508" id="1508"/>
+                <ref-entry baseId="1509" id="1509"/>
+                <ref-entry baseId="1510" id="1510"/>
+                <ref-entry baseId="1511" id="1511"/>
+                <ref-entry baseId="1512" id="1512"/>
+                <ref-entry baseId="1513" id="1513"/>
+                <ref-entry baseId="1514" id="1514"/>
+                <ref-entry baseId="1515" id="1515"/>
+                <ref-entry baseId="1516" id="1516"/>
+                <ref-entry baseId="1517" id="1517"/>
+                <ref-entry baseId="1518" id="1518"/>
+                <ref-entry baseId="1519" id="1519"/>
+                <ref-entry baseId="1520" id="1520"/>
+                <ref-entry baseId="1521" id="1521"/>
+                <ref-entry baseId="1522" id="1522"/>
+                <ref-entry baseId="1523" id="1523"/>
+                <ref-entry baseId="1524" id="1524"/>
+                <ref-entry baseId="1525" id="1525"/>
+                <ref-entry baseId="1526" id="1526"/>
+                <ref-entry baseId="1527" id="1527"/>
+                <ref-entry baseId="1528" id="1528"/>
+                <ref-entry baseId="1529" id="1529"/>
+                <ref-entry baseId="1530" id="1530"/>
+                <ref-entry baseId="1531" id="1531"/>
+                <ref-entry baseId="1532" id="1532"/>
+                <ref-entry baseId="1533" id="1533"/>
+                <ref-entry baseId="1534" id="1534"/>
+                <ref-entry baseId="1535" id="1535"/>
+                <ref-entry baseId="1536" name="txtSummary" id="1536"/>
+                <ref-entry baseId="1537" id="1537"/>
+            </overridden-values>
+            <property name="pageBreakInterval">10</property>
+        </table>
+    </body>
+</report>

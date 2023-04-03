@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <property name="units">in</property>
+    <property name="theme">ThemesReportItems31.Modern</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+        <structure>
+            <property name="fileName">Resources TA/Report Libraries/Text Analytics Themes.rptlibrary</property>
+            <property name="namespace">Text Analytics Themes</property>
+        </structure>
+        <structure>
+            <property name="fileName">Resources TA/Report Libraries/Text Analytics Connections.rptlibrary</property>
+            <property name="namespace">Text Analytics Connections</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <data-mart-data-source name="Text Analytics Summary DO" id="1314">
+            <property name="datamartURL">Resources TA/Data Objects/Text Analytics Summary</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+        <data-mart-data-source name="Text Analytics DO" id="1459">
+            <property name="datamartURL">Resources TA/Data Objects/Text Analytics</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="Documents" id="1460">
+            <property name="dataSource">Text Analytics DO</property>
+            <property name="dataObject">Documents</property>
+        </data-mart-linked-data-model>
+        <data-mart-linked-data-model name="Documents Summary" id="1629">
+            <property name="dataSource">Text Analytics Summary DO</property>
+            <property name="dataObject">Documents Summary</property>
+        </data-mart-linked-data-model>
+    </property>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">auto</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Chart" name="Document Count by Status" id="1382">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" orientation="1">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <cursor type="0"/>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,572.25,286.125"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+   <cursor type="0"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="true"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="A, B, C"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title visible="true">
+    <caption value="Status"/>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title visible="true">
+     <caption value="Number of Documents"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series _type="BarSeries" seriesIdentifier="Documents" stacked="false" riser="0">
+      <label visible="true">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;No of Documents&quot;]">
+       <grouping enabled="true"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;Process Status&quot;]"/>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">is-not-null</property>
+                    <expression name="expr" type="javascript">row["Process Status"]</expression>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <property name="inheritColumns">true</property>
+            <property name="height">286.125pt</property>
+            <property name="width">572.25pt</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">No of Documents</property>
+                    <text-property name="displayName">No of Documents</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["No of Documents"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">Process Status</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Process Status"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="theme">Text Analytics Themes.Chart-OpenText_PS_Light_Primary</property>
+            <property name="linkedDataModel">Documents Summary</property>
+        </extended-item>
+        <extended-item extensionName="Chart" name="Status by Processed Date" id="1383">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Stacked">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="true" orientation="0" position="1">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,572.25,286.125"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="true"/>
+  <extendedProperties name="jschart.navigator" value="false"/>
+  <extendedProperties name="jschart.range.selector" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000,03/12/2000,02/29/2000"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes type="3">
+   <title visible="true">
+    <caption value="Processed Date"/>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title visible="true">
+     <caption value="Number of Documents"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="row[&quot;Process Status&quot;]">
+      <grouping/>
+     </query>
+     <series _type="BarSeries" seriesIdentifier="Documents" labelPosition="4" stacked="true" riser="0">
+      <label visible="true">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;No of Documents&quot;]">
+       <grouping enabled="true"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;Porcessed Date&quot;]"/>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true" groupType="1"/>
+    <sortKey/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">is-not-null</property>
+                    <expression name="expr" type="javascript">row["Process Status"]</expression>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <property name="inheritColumns">true</property>
+            <property name="height">286.125pt</property>
+            <property name="width">572.25pt</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Porcessed Date</property>
+                    <text-property name="displayName">Porcessed Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Porcessed Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">No of Documents</property>
+                    <text-property name="displayName">No of Documents</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["No of Documents"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">Process Status</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Process Status"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="theme">Text Analytics Themes.Chart-OpenText_PS_Light_Primary</property>
+            <property name="linkedDataModel">Documents Summary</property>
+        </extended-item>
+        <table name="List of In Progress documents" id="1413">
+            <property name="theme">Text Analytics Themes.Table-OpenText_PS_Light_Primary</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Document Name</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Document Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Porcessed Date</property>
+                    <text-property name="displayName">Porcessed Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Porcessed Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Process Status</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Process Status"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder</property>
+                    <text-property name="displayName">Folder</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Folder"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Repository Name</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Repository Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="linkedDataModel">Documents</property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Process Status"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">"In Progress"</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+                <structure>
+                    <property name="operator">top-n</property>
+                    <expression name="expr" type="javascript">row["Document Name"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">50</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <column id="1432">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1433">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1434">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1435">
+                <property name="textAlign">left</property>
+            </column>
+            <header>
+                <row id="1414">
+                    <cell id="1415">
+                        <label id="1416">
+                            <text-property name="text">Repository Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1417">
+                        <label id="1418">
+                            <text-property name="text">Folder</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1419">
+                        <label id="1420">
+                            <text-property name="text">File Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1421">
+                        <label id="1422">
+                            <text-property name="text">Processed On</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="1423">
+                    <cell id="1424">
+                        <data id="1425">
+                            <property name="resultSetColumn">Repository Name</property>
+                        </data>
+                    </cell>
+                    <cell id="1426">
+                        <data id="1427">
+                            <property name="resultSetColumn">Folder</property>
+                        </data>
+                    </cell>
+                    <cell id="1428">
+                        <data id="1429">
+                            <property name="resultSetColumn">Document Name</property>
+                        </data>
+                    </cell>
+                    <cell id="1430">
+                        <data id="1431">
+                            <structure name="dateTimeFormat">
+                                <property name="category">Unformatted</property>
+                            </structure>
+                            <property name="resultSetColumn">Porcessed Date</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="1466">
+                    <list-property name="visibility">
+                        <structure>
+                            <property name="format">all</property>
+                            <expression name="valueExpr" type="javascript">row.__rownum > 0</expression>
+                        </structure>
+                    </list-property>
+                    <cell id="1467">
+                        <property name="colSpan">4</property>
+                        <property name="rowSpan">1</property>
+                        <label id="1612">
+                            <text-property name="text">No document found for selected criteria</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </footer>
+        </table>
+        <table name="List of failed documents" id="1385">
+            <property name="theme">Text Analytics Themes.Table-OpenText_PS_Light_Primary</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Document Name</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Document Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Porcessed Date</property>
+                    <text-property name="displayName">Porcessed Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Porcessed Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder</property>
+                    <text-property name="displayName">Folder</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Folder"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Repository Name</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Repository Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Process Status</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Process Status"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <property name="linkedDataModel">Documents</property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Process Status"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">"Failed"</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+                <structure>
+                    <property name="operator">top-n</property>
+                    <expression name="expr" type="javascript">row["Document Name"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">50</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <column id="1409">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1410">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1411">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1412">
+                <property name="textAlign">left</property>
+            </column>
+            <header>
+                <row id="1386">
+                    <cell id="1387">
+                        <label id="1394">
+                            <text-property name="text">Repository Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1389">
+                        <label id="1392">
+                            <text-property name="text">Folder</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1391">
+                        <label id="1390">
+                            <text-property name="text">File Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1393">
+                        <label id="1388">
+                            <text-property name="text">Processed On</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="1395">
+                    <cell id="1396">
+                        <data id="1403">
+                            <property name="resultSetColumn">Repository Name</property>
+                        </data>
+                    </cell>
+                    <cell id="1398">
+                        <data id="1401">
+                            <property name="resultSetColumn">Folder</property>
+                        </data>
+                    </cell>
+                    <cell id="1400">
+                        <data id="1399">
+                            <property name="resultSetColumn">Document Name</property>
+                        </data>
+                    </cell>
+                    <cell id="1402">
+                        <data id="1397">
+                            <structure name="dateTimeFormat">
+                                <property name="category">Unformatted</property>
+                            </structure>
+                            <property name="resultSetColumn">Porcessed Date</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="1613">
+                    <list-property name="visibility">
+                        <structure>
+                            <property name="format">all</property>
+                            <expression name="valueExpr" type="javascript">row.__rownum > 0</expression>
+                        </structure>
+                    </list-property>
+                    <cell id="1614">
+                        <property name="colSpan">4</property>
+                        <property name="rowSpan">1</property>
+                        <label id="1623">
+                            <text-property name="text">No document found for selected criteria</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </footer>
+        </table>
+        <table name="List of Pending documents" id="1436">
+            <property name="theme">Text Analytics Themes.Table-OpenText_PS_Light_Primary</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Document Name</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Document Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Porcessed Date</property>
+                    <text-property name="displayName">Porcessed Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Porcessed Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Process Status</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Process Status"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder</property>
+                    <text-property name="displayName">Folder</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Folder"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Repository Name</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Repository Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <property name="linkedDataModel">Documents</property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Process Status"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">"Not Started"</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+                <structure>
+                    <property name="operator">top-n</property>
+                    <expression name="expr" type="javascript">row["Document Name"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">50</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <column id="1455">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1456">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1457">
+                <property name="textAlign">left</property>
+            </column>
+            <column id="1458">
+                <property name="textAlign">left</property>
+            </column>
+            <header>
+                <row id="1437">
+                    <cell id="1438">
+                        <label id="1439">
+                            <text-property name="text">Repository Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1440">
+                        <label id="1441">
+                            <text-property name="text">Folder</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1442">
+                        <label id="1443">
+                            <text-property name="text">File Name</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1444">
+                        <label id="1445">
+                            <text-property name="text">Processed On</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="1446">
+                    <cell id="1447">
+                        <data id="1448">
+                            <property name="resultSetColumn">Repository Name</property>
+                        </data>
+                    </cell>
+                    <cell id="1449">
+                        <data id="1450">
+                            <property name="resultSetColumn">Folder</property>
+                        </data>
+                    </cell>
+                    <cell id="1451">
+                        <data id="1452">
+                            <property name="resultSetColumn">Document Name</property>
+                        </data>
+                    </cell>
+                    <cell id="1453">
+                        <data id="1454">
+                            <structure name="dateTimeFormat">
+                                <property name="category">Unformatted</property>
+                            </structure>
+                            <property name="resultSetColumn">Porcessed Date</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="1625">
+                    <list-property name="visibility">
+                        <structure>
+                            <property name="format">all</property>
+                            <expression name="valueExpr" type="javascript">row.__rownum > 0</expression>
+                        </structure>
+                    </list-property>
+                    <cell id="1626">
+                        <property name="colSpan">4</property>
+                        <property name="rowSpan">1</property>
+                        <label id="1624">
+                            <text-property name="text">No document found for selected criteria</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <property name="units">in</property>
+    <property name="theme">ThemesReportItems31.Modern</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+        <structure>
+            <property name="fileName">Resources TA/Report Libraries/Text Analytics Connections.rptlibrary</property>
+            <property name="namespace">CE Connections</property>
+        </structure>
+        <structure>
+            <property name="fileName">Resources TA/Report Libraries/Text Analytics Themes.rptlibrary</property>
+            <property name="namespace">Text Analytics Themes</property>
+        </structure>
+    </list-property>
+    <property name="responsiveReport">true</property>
+    <data-sources>
+        <data-mart-data-source name="Text Analytics Summary DO" id="1314">
+            <property name="datamartURL">Resources TA/Data Objects/Text Analytics Summary</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+        <data-mart-data-source name="Text Analytics DO" id="5">
+            <property name="datamartURL">Resources TA/Data Objects/Text Analytics</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="Categorization" id="1599">
+            <property name="dataSource">Text Analytics Summary DO</property>
+            <property name="dataObject">Categorization</property>
+        </data-mart-linked-data-model>
+        <data-mart-linked-data-model name="Documents" id="1600">
+            <property name="dataSource">Text Analytics DO</property>
+            <property name="dataObject">Documents</property>
+        </data-mart-linked-data-model>
+    </property>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">auto</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Chart" name="Document Distribution by Category" id="1578">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" orientation="0">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title visible="false">
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,573.0,286.5"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+   <cursor type="0"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.scroll" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="true"/>
+  <extendedProperties name="jschart.client.script" value="/**&#13;&#10; * Called before chart instance is initially created.&#13;&#10; *&#13;&#10; * @param options&#13;&#10; *            chart options&#13;&#10; */&#13;&#10;beforeGeneration: function(options)&#13;&#10;{&#13;&#10;    //Display first 10 in the box and let the rest scroll&#13;&#10;    options.xAxis.min = 0;&#13;&#10;    options.xAxis.max = 20;&#13;&#10;    options.xAxis.scrollbar = {enabled: true};&#13;&#10;    options.xAxis.reversed = true;&#13;&#10;&#13;&#10;    options.xAxis.labels.style = {&#13;&#10;          whiteSpace: &quot;nowrap&quot;&#13;&#10;        , textOverflow: &quot;none&quot;&#13;&#10;    };&#13;&#10;debugger;&#13;&#10;    // Sort the Data low to high&#13;&#10;    var newData = [];&#13;&#10;    for (var i = 0; i &lt; options.series[0].data.length; i++) {&#13;&#10;        var pointData = [options.xAxis.categories[i], options.series[0].data[i].y, options.series[0].data[i]]; newData.push(pointData);&#13;&#10;    }&#13;&#10;    newData.sort(function(a, b) {&#13;&#10;        //return  a[1] - b[1] || b[0].localeCompare(a[0]);&#13;&#10;        return  b[1] - a[1] || b[0].localeCompare(a[0]);&#13;&#10;    })&#13;&#10;&#13;&#10;    for (var i = 0; i &lt; options.series[0].data.length; i++) {&#13;&#10;        options.series[0].data[i] = newData[i][2];&#13;&#10;        options.xAxis.categories[i] = newData[i][0];&#13;&#10;    } &#13;&#10;},"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="A, B, C"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series _type="BarSeries" seriesIdentifier="Documents" stacked="false" riser="0">
+      <label visible="true">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;No of Documents&quot;]">
+       <grouping enabled="true"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;Category&quot;]"/>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <list-property name="action">
+                <structure>
+                    <property name="targetWindow">_blank</property>
+                    <property name="linkType">drill-through</property>
+                    <property name="targetFileType">report-design</property>
+                    <property name="reportName">Document Table.rptdesign</property>
+                    <list-property name="paramBindings">
+                        <structure>
+                            <property name="paramName">prmCategoryID</property>
+                            <simple-property-list name="expression">
+                                <value type="javascript">row["categoryid"]</value>
+                            </simple-property-list>
+                        </structure>
+                        <structure>
+                            <property name="paramName">prmKnowledgebase</property>
+                            <simple-property-list name="expression">
+                                <value type="javascript">row["Knowledge Base"]</value>
+                            </simple-property-list>
+                        </structure>
+                    </list-property>
+                </structure>
+            </list-property>
+            <property name="inheritColumns">true</property>
+            <property name="height">286.5pt</property>
+            <property name="width">100%</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Category</property>
+                    <text-property name="displayName">Category</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Category"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">No of Documents</property>
+                    <text-property name="displayName">No of Documents</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["No of Documents"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+            </list-property>
+            <property name="theme">Text Analytics Themes.Chart-OpenText_PS_Light_Primary</property>
+            <property name="linkedDataModel">Categorization</property>
+        </extended-item>
+        <table name="Documents List" id="1302">
+            <property name="theme">Text Analytics Themes.Table-OpenText_PS_Light_Primary</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">doc_id</property>
+                    <text-property name="displayName">doc_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["doc_id"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">Document Name</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Document Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Created Date</property>
+                    <text-property name="displayName">Created Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Created Date"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Last Modified Date</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Last Modified Date"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Summary</property>
+                    <text-property name="displayName">Summary</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Summary"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Language</property>
+                    <text-property name="displayName">Language</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Language"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder</property>
+                    <text-property name="displayName">Folder</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Folder"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Repository Name</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Repository Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Created By</property>
+                    <text-property name="displayName">Created By</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Created By"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+                <structure>
+                    <property name="name">File Size Display</property>
+                    <expression name="expression" type="javascript">dataSetRow["File Size Display"]</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
+            <property name="linkedDataModel">Documents</property>
+            <column id="1351"/>
+            <header>
+                <row id="1533">
+                    <property name="height">0px</property>
+                    <cell id="1534">
+                        <image id="1536">
+                            <property name="display">none</property>
+                            <property name="height">20px</property>
+                            <property name="width">20px</property>
+                            <expression name="altText">"Show More"</expression>
+                            <property name="source">file</property>
+                            <expression name="uri" type="constant">Images/arrow-alt-circle-down.svg</expression>
+                        </image>
+                        <image id="1537">
+                            <property name="display">none</property>
+                            <property name="height">20px</property>
+                            <property name="width">20px</property>
+                            <expression name="altText">"Show Less"</expression>
+                            <property name="source">file</property>
+                            <expression name="uri" type="constant">Images/arrow-alt-circle-up.svg</expression>
+                        </image>
+                        <text id="1508">
+                            <property name="display">none</property>
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<div id="docSummaryScript"></div>
+
+<script>
+
+//$('*[iid="/0.1508"]').closest("tr").hide();
+$("#docSummaryScript").closest('tr').hide();
+
+var docSummaryExpandLength = 250;
+function showMoreDocSummary(imageIcon) {
+	//debugger;
+	var docSummary = $(imageIcon).parent().data("doc_summary_full");
+	if (!docSummary) {
+		return;
+	}
+	$(imageIcon).parent().html("<span> " + docSummary + "</span>" +  docSummaryLessControl);
+}
+
+function showLessDocSummary(imageIcon) {
+	//debugger;
+	var docSummary = $(imageIcon).parent().data("doc_summary_full");
+	if (!docSummary) {
+		return;
+	}
+	$(imageIcon).parent().html("<span> " + docSummary.substring(0, docSummaryExpandLength) + "...</span>" +  docSummaryMoreControl)
+}
+
+</script>
+<script>
+
+//debugger;
+
+$("<style type='text/css'> .docSummaryMoreIcon { width:15px; height:15px;} .docSummaryMoreIcon:hover {cursor: pointer;} .docSummaryLessIcon { width:15px; height:15px;} .docSummaryLessIcon:hover {cursor: pointer;} .docMimeIcon {height:18px; width:18px;} .reportul ul { margin: 0;  padding-top:0;padding-bottom:0;}  .reportul li { margin: 0;  padding-top:0;padding-bottom:0;} .reportulnobullet ul { margin: 0;  padding-top:0;padding-bottom:0; padding-left: 0; list-style: none} .reportulnobullet li { margin: 0;  padding-top: 0; padding-bottom: 0; }</style>").appendTo("head");
+
+var images = $("#docSummaryScript").closest('tr').find("img");
+var i = 0;
+var docSummaryMoreImage;
+var docSummaryLessImage
+for (i = 0; i < images.length; i++) {
+    if ($(images[i]).attr("alt") === "Show More") {
+        docSummaryMoreImage = $(images[i]);
+    } else if ($(images[i]).attr("alt") === "Show Less") {
+        docSummaryLessImage = $(images[i]);
+    }
+}
+var docSummaryMoreControl = "<img src='" + $(docSummaryMoreImage).attr("src") + "' class='docSummaryMoreIcon' onclick='showMoreDocSummary(this);'>";
+var docSummaryLessControl = "<img src='" + $(docSummaryLessImage).attr("src") + "' class='docSummaryMoreIcon' onclick='showLessDocSummary(this);'>";
+
+// Find the Summary controls by the elementID (specified in the control)
+//var summaryControls = $('*[iid="/0.1431"]');
+var summaryControls = $('*[element_name="docSummaryHolder"]').parent().next();
+
+for (i = 0; i < summaryControls.length; i++) {
+		if (!$(summaryControls[i]).data("doc_summary_full")) {
+		var docSummary = $(summaryControls[i]).text()
+		$(summaryControls[i]).data("doc_summary_full", docSummary);
+		if (docSummary.length > docSummaryExpandLength) {
+			$(summaryControls[i]).html("<span> " + docSummary.substring(0, docSummaryExpandLength) + "...</span>" +  docSummaryMoreControl)
+			//$(summaryControls[i]).append(docSummaryMoreControl);
+		}
+	}
+}
+// Pad grid entries
+//$('*[iid="/0.1487"]').children('.gridCell').css("padding", "5px");
+// Link to Document Detail
+var grids = $('*[element_name="docSummaryHolder"]').closest('[element_type="Grid"]');
+// Is this in Dashboard. Dashboard uses table for Grid.
+var isTable = $(grids[0]).prop('nodeName') === "TABLE";
+if (isTable) {
+	$(grids).find("tr").children().css("padding", "5px")
+} else {
+	$(grids).children('.gridCell').css("padding", "5px");
+}
+var docNameControl;
+for (i = 0; i < grids.length; i++) {
+
+    if (isTable) {
+    	docNameControl = $(grids[i]).find("td").first();
+    } else {
+    	docNameControl = $(grids[i]).children().first();
+    }
+    $(docNameControl).css({"cursor" :"pointer"});
+    
+    if (isTable) {
+        $(docNameControl).find("span").css({"line-height" : "20px", "vertical-align": "middle"});
+    } else {
+        $(docNameControl).find("span").css({"line-height" : "20px", "vertical-align": "top"});
+    }
+
+    $(docNameControl).on("click", function() {
+    var loc = "";
+	regex = /Applications\/(.*?)\/Dashboards/;
+	if (regex.test(window.location.href)) {
+		loc = regex.exec(window.location.href)[1];
+	}
+	else {
+		regex = /Applications%2f(.*?)%2fDashboards/;
+		if (regex.test(window.location.href)) {
+			loc = regex.exec(window.location.href)[1];
+		}
+		else {
+			console.log (window.location.href);
+			//debugger;
+			//alert ('Error ' + window.location.href);
+		}
+	}
+	url = "/iportal/executereport.do?__requesttype=immediate&amp;invokesubmit=true&amp;__executablename=/Applications/" + loc + "/Report Designs/Document Detail.rptdesign&amp;pDocId=" + $(this).closest("tr")[0].id.split('_')[1];
+	win = window.open(url, '_blank');
+	win.focus(); 
+  });
+	
+}
+
+</script>]]></text-property>
+                        </text>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="1482">
+                    <expression name="bookmark" type="javascript">row["doc_id"]</expression>
+                    <cell id="1483">
+                        <grid id="1487">
+                            <property name="borderBottomColor">#337AB7</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">thin</property>
+                            <property name="borderLeftColor">#337AB7</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">thin</property>
+                            <property name="borderRightColor">#337AB7</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">thin</property>
+                            <column id="1488"/>
+                            <column id="1490">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1522">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1526">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1518">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1491"/>
+                            <row id="1492">
+                                <property name="backgroundColor">#B0C4DE</property>
+                                <property name="verticalAlign">middle</property>
+                                <cell id="1493">
+                                    <property name="colSpan">4</property>
+                                    <property name="rowSpan">1</property>
+                                    <image id="1576">
+                                        <property name="display">inline</property>
+                                        <property name="height">18px</property>
+                                        <property name="width">18px</property>
+                                        <property name="source">file</property>
+                                        <expression name="uri" type="javascript">"images/" + row["mime_icon_name"]</expression>
+                                    </image>
+                                    <data id="1577">
+                                        <property name="fontSize">16px</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">Document Name</property>
+                                    </data>
+                                </cell>
+                                <cell id="1515">
+                                    <label id="1527">
+                                        <property name="display">inline</property>
+                                        <list-property name="visibility">
+                                            <structure>
+                                                <property name="format">all</property>
+                                                <expression name="valueExpr" type="javascript">true</expression>
+                                            </structure>
+                                        </list-property>
+                                        <text-property name="text">Size: </text-property>
+                                    </label>
+                                    <data id="1334">
+                                        <property name="textAlign">left</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">File Size Display</property>
+                                    </data>
+                                </cell>
+                                <cell id="1496">
+                                    <label id="1528">
+                                        <property name="display">inline</property>
+                                        <text-property name="text">Modified On: </text-property>
+                                    </label>
+                                    <data id="1330">
+                                        <structure name="dateTimeFormat">
+                                            <property name="category">Medium Date</property>
+                                            <property name="pattern">Medium Date</property>
+                                        </structure>
+                                        <property name="textAlign">left</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">Last Modified Date</property>
+                                    </data>
+                                </cell>
+                            </row>
+                            <row id="1497">
+                                <cell id="1498">
+                                    <property name="colSpan">4</property>
+                                    <property name="rowSpan">1</property>
+                                    <text id="1514">
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[<span style="line-height:16px; vertical-align: middle;"><VALUE-OF>row["Repository Name"]</VALUE-OF></span><img src="images/chevron-right.png" style="line-height:16px; vertical-align: middle;"></img><span></span><span style="line-height:16px; vertical-align: middle;"><VALUE-OF>row["Folder"]</VALUE-OF></span>]]></text-property>
+                                    </text>
+                                </cell>
+                                <cell id="1516">
+                                    <label id="1530">
+                                        <property name="display">inline</property>
+                                        <list-property name="visibility">
+                                            <structure>
+                                                <property name="format">all</property>
+                                                <expression name="valueExpr" type="javascript">true</expression>
+                                            </structure>
+                                        </list-property>
+                                        <text-property name="text">Language: </text-property>
+                                    </label>
+                                    <text-data id="1588">
+                                        <property name="display">inline</property>
+                                        <expression name="valueExpr">"&lt;div class='reportulnobullet'>" + (row["Language"] == null ? "" : row["Language"]) + "&lt;/div>"</expression>
+                                        <property name="contentType">html</property>
+                                    </text-data>
+                                </cell>
+                                <cell id="1501">
+                                    <label id="1529">
+                                        <property name="display">inline</property>
+                                        <text-property name="text">Owner: </text-property>
+                                    </label>
+                                    <data id="1332">
+                                        <property name="textAlign">left</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">Created By</property>
+                                    </data>
+                                </cell>
+                            </row>
+                            <row id="1502">
+                                <cell id="1503">
+                                    <property name="colSpan">6</property>
+                                    <property name="rowSpan">1</property>
+                                    <text id="1535">
+                                        <property name="display">none</property>
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[<span element_name="docSummaryHolder">&amp;nbsp;</span>]]></text-property>
+                                    </text>
+                                    <text name="txtSummary" id="1431">
+                                        <property name="display">block</property>
+                                        <property name="bookmarkDisplayName">doc_summary_name</property>
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[<VALUE-OF>row["Summary"]</VALUE-OF>]]></text-property>
+                                    </text>
+                                </cell>
+                            </row>
+                        </grid>
+                    </cell>
+                </row>
+            </detail>
+        </table>
+    </body>
+</report>

@@ -1,0 +1,2388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <list-property name="userProperties">
+        <structure>
+            <property name="name">1095.dsRepository.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsRepository.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsRepository.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsRepository.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1370.dsDocument.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1370.dsDocument.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1370.dsDocument.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1370.dsDocument.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+    </list-property>
+    <property name="1095.dsRepository.x">61</property>
+    <property name="1095.dsRepository.y">327</property>
+    <property name="1095.dsRepository.width">150</property>
+    <property name="1095.dsRepository.height">200</property>
+    <property name="1170.dsRepository.x">370</property>
+    <property name="1170.dsRepository.y">11</property>
+    <property name="1170.dsRepository.width">150</property>
+    <property name="1170.dsRepository.height">200</property>
+    <property name="1170.dsCategorizationSummary.x">40</property>
+    <property name="1170.dsCategorizationSummary.y">17</property>
+    <property name="1170.dsCategorizationSummary.width">150</property>
+    <property name="1170.dsCategorizationSummary.height">200</property>
+    <property name="1095.dsCategory.x">559</property>
+    <property name="1095.dsCategory.y">83</property>
+    <property name="1095.dsCategory.width">150</property>
+    <property name="1095.dsCategory.height">200</property>
+    <property name="1095.dsDocument.x">298</property>
+    <property name="1095.dsDocument.y">331</property>
+    <property name="1095.dsDocument.width">150</property>
+    <property name="1095.dsDocument.height">200</property>
+    <property name="1095.dsConcept.x">545</property>
+    <property name="1095.dsConcept.y">554</property>
+    <property name="1095.dsConcept.width">150</property>
+    <property name="1095.dsConcept.height">200</property>
+    <property name="1095.dsEntity.x">556</property>
+    <property name="1095.dsEntity.y">326</property>
+    <property name="1095.dsEntity.width">150</property>
+    <property name="1095.dsEntity.height">200</property>
+    <property name="1370.dsDocument.x">244</property>
+    <property name="1370.dsDocument.y">16</property>
+    <property name="1370.dsDocument.width">150</property>
+    <property name="1370.dsDocument.height">200</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Pipeline" id="2">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>PostgresSupportSP</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8888/magellan</property>
+            <property name="odaUser">maguser</property>
+            <property name="OdaConnProfileName">Pipeline</property>
+            <property name="OdaConnProfileStorePath">Resources TA/Text Analytics Profile.otconnprofiles</property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Crawler" id="1092">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>PostgresSupportSP</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8882/crawler_repository</property>
+            <property name="odaUser">postgres</property>
+            <property name="OdaConnProfileName">Crawler</property>
+            <property name="OdaConnProfileStorePath">Resources TA/Text Analytics Profile.otconnprofiles</property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.excel" name="FileExtensionMap" id="1367">
+            <property name="URI">Resources TA/Data Files/ROT File Extension Map.xlsx</property>
+            <property name="INCLCOLUMNNAME">yes</property>
+            <property name="INCLTYPELINE">no</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsDocument_Initial" id="1093">
+            <property name="isVisible">false</property>
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">Folder</property>
+                    <expression name="expression" type="javascript">var path = "";&#13;
+if (row["Path"] != null) {&#13;
+	var folderAndIds = row["Path"].split(";");&#13;
+	for (var idx in folderAndIds) {&#13;
+		var folderAndId = folderAndIds[idx];&#13;
+		if (!folderAndId) {&#13;
+			continue;&#13;
+		}&#13;
+		var folder;&#13;
+		var firstPos = folderAndId.indexOf("\"");&#13;
+		if (firstPos > -1 &amp;&amp; firstPos + 1 &lt; folderAndId.length) {&#13;
+			var lastPos = folderAndId.indexOf("\"", firstPos + 1);&#13;
+			if (lastPos > -1) {&#13;
+				folder = folderAndId.substring(firstPos + 1, lastPos);&#13;
+			}&#13;
+		}&#13;
+		if (!folder || folder == null) {&#13;
+			continue;&#13;
+		}&#13;
+		if (path) {&#13;
+			path += " / ";&#13;
+		}&#13;
+		path += folder;&#13;
+	}&#13;
+} else {&#13;
+	path = null;&#13;
+}&#13;
+path;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 1</property>
+                    <expression name="expression" type="javascript">var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length == 1 &amp;&amp; filearr.length == 1) {&#13;
+		folder = filearr[0].split("-")[0];&#13;
+	} else if (csarr.length >= 1 &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[0];&#13;
+	} else {&#13;
+		if (filearr.length >=1 ) {&#13;
+			if (filearr[0].split("-").length >= 1) {&#13;
+				folder = filearr[0].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 2</property>
+                    <expression name="expression" type="javascript">var level = 2;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 3</property>
+                    <expression name="expression" type="javascript">var level = 3;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 4</property>
+                    <expression name="expression" type="javascript">var level = 4;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 5</property>
+                    <expression name="expression" type="javascript">var level = 5;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 6</property>
+                    <expression name="expression" type="javascript">var level = 6;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 7</property>
+                    <expression name="expression" type="javascript">var level = 7;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 8</property>
+                    <expression name="expression" type="javascript">var level = 8;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 9</property>
+                    <expression name="expression" type="javascript">var level = 9;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 10</property>
+                    <expression name="expression" type="javascript">var level = 10;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith = "/") {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">File Size Display</property>
+                    <expression name="expression" type="javascript">var val = row["File Size"]&#13;
+var absValue = Math.abs(val);&#13;
+if (absValue >= 1125899906842624) {&#13;
+	formattedValue = Formatter.format(val / 1125899906842624, "#,###.00 PB");&#13;
+} else if (absValue >= 1099511627776) {&#13;
+	formattedValue = Formatter.format(val / 1099511627776, "#,###.00 TB");&#13;
+} else if (absValue >= 1073741824) {&#13;
+	formattedValue = Formatter.format(val / 1073741824, "#,###.00 GB");&#13;
+} else if (absValue >= 1048576) {&#13;
+	formattedValue = Formatter.format(val / 1048576, "#,###.00 MB");&#13;
+} else if (absValue >= 1024) {&#13;
+	formattedValue = Formatter.format(val / 1024, "#,###.00 KB");&#13;
+} else {&#13;
+	formattedValue = Formatter.format(val, "#,### Bytes");&#13;
+}&#13;
+formattedValue;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">mime_icon_name</property>
+                    <expression name="expression" type="javascript">var fileType = "other";&#13;
+var normalizedFileType = row["File Type"];&#13;
+if (normalizedFileType) {&#13;
+    normalizedFileType = normalizedFileType.trim().toLowerCase();&#13;
+    switch (normalizedFileType) {&#13;
+	case "archives":&#13;
+	case "folder":&#13;
+	case "html":&#13;
+	case "image":&#13;
+	case "other":&#13;
+	case "pdf":&#13;
+	case "powerpoint":&#13;
+	case "video":&#13;
+	case "email":&#13;
+	case "text":&#13;
+	case "zip":&#13;
+	case "tweet":&#13;
+	    fileType = normalizedFileType;&#13;
+	    break;&#13;
+	case "ms word":&#13;
+	    fileType = "word";&#13;
+	    break;&#13;
+	case "ms excel":&#13;
+	    fileType = "excel";&#13;
+	    break;&#13;
+    }&#13;
+}&#13;
+"mime_" + fileType + ".svg";</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Document Extension</property>
+                    <expression name="expression" type="javascript">var docExtension = null;&#13;
+if (row["Document Name"] != null) {&#13;
+  var pos = row["Document Name"].lastIndexOf(".");&#13;
+  if (pos > -1) {&#13;
+  	docExtension = (row["Document Name"].substring(pos+1)).toLowerCase();&#13;
+  }&#13;
+}&#13;
+docExtension;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">doc_id</text-property>
+                    <text-property name="heading">doc_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <text-property name="heading">repository_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Document Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <text-property name="heading">Document Name</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">File Type</text-property>
+                    <text-property name="heading">File Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">File Size</text-property>
+                    <text-property name="heading">File Size</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Path</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Path</text-property>
+                    <text-property name="heading">Path</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created By</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created By</text-property>
+                    <text-property name="heading">Created By</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created Date</text-property>
+                    <text-property name="heading">Created Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Last Modified Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                    <text-property name="heading">Last Modified Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">direct_link</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">direct_link</text-property>
+                    <text-property name="heading">direct_link</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Summary</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Summary</text-property>
+                    <text-property name="heading">Summary</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">document_body</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">document_body</text-property>
+                    <text-property name="heading">document_body</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Language</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Language</text-property>
+                    <text-property name="heading">Language</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Tone</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Tone</text-property>
+                    <text-property name="heading">Tone</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Sentiment Score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Sentiment Score</text-property>
+                    <text-property name="heading">Sentiment Score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Subjectivity</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Subjectivity</text-property>
+                    <text-property name="heading">Subjectivity</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Subjectivity Score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Subjectivity Score</text-property>
+                    <text-property name="heading">Subjectivity Score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Porcessed Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Porcessed Date</text-property>
+                    <text-property name="heading">Porcessed Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Process Status</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <text-property name="heading">Process Status</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 1</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 2</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 3</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 4</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 5</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 6</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 7</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 8</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 9</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 10</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size Display</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">mime_icon_name</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Document Extension</property>
+                    <property name="analysis">dimension</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Document Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">File Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">File Size</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Path</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Created By</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Created Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Last Modified Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">direct_link</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Summary</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">document_body</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Language</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">Tone</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">Sentiment Score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">Subjectivity</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">Subjectivity Score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">Porcessed Date</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">Process Status</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">Folder</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">Folder Level 1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">Folder Level 2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">Folder Level 3</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">Folder Level 4</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">Folder Level 5</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">Folder Level 6</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">Folder Level 7</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">Folder Level 8</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">Folder Level 9</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">Folder Level 10</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">File Size Display</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">mime_icon_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">33</property>
+                        <property name="name">Document Extension</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if ( (params["prmRepositoryIds"].value !== null) &amp;&amp; ("" !== params["prmRepositoryIds"].value)) {
+	var repositoryCondition = " repository_id in (" + params["prmRepositoryIds"].value + ") " ;
+	var placeHolderString = "-- ADDITIONAL CONDITIONS PLACE HOLDER";
+	var query = this.queryText;
+	var placeHolderPos = query.indexOf(placeHolderString);
+	if (placeHolderPos > 0) {
+		query = query.substring(0, placeHolderPos);
+		query += " AND " + repositoryCondition;
+		query += this.queryText.substring(placeHolderPos + placeHolderString.length, this.queryText.length())
+		this.queryText = query;
+	}
+	
+}
+]]></method>
+            <property name="dataSource">Pipeline</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">doc_id</property>
+                    <property name="nativeName">doc_id</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">repository_id</property>
+                    <property name="nativeName">repository_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Document Name</property>
+                    <property name="nativeName">Document Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">File Type</property>
+                    <property name="nativeName">File Type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">File Size</property>
+                    <property name="nativeName">File Size</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">Path</property>
+                    <property name="nativeName">Path</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">Created By</property>
+                    <property name="nativeName">Created By</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">Created Date</property>
+                    <property name="nativeName">Created Date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">Last Modified Date</property>
+                    <property name="nativeName">Last Modified Date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">direct_link</property>
+                    <property name="nativeName">direct_link</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">Summary</property>
+                    <property name="nativeName">Summary</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">document_body</property>
+                    <property name="nativeName">document_body</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">Language</property>
+                    <property name="nativeName">Language</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">Tone</property>
+                    <property name="nativeName">Tone</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">Sentiment Score</property>
+                    <property name="nativeName">Sentiment Score</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">Subjectivity</property>
+                    <property name="nativeName">Subjectivity</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">Subjectivity Score</property>
+                    <property name="nativeName">Subjectivity Score</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">Porcessed Date</property>
+                    <property name="nativeName">Porcessed Date</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">Process Status</property>
+                    <property name="nativeName">Process Status</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+	  d.doc_id
+	, d.repository_id
+	, dma.name as "Document Name"
+	, dma.normalized_file_type as "File Type"
+	, dma.content_stream_length as "File Size"
+	, dma.path as "Path"
+	, dma.created_by as "Created By"
+	, cma.content_creation_date as "Created Date"
+	, dma.last_modification_date as "Last Modified Date"
+	, dma.direct_link
+	, coalesce(cas.summary, cma.summary, null) as "Summary"
+	, cma.summary as document_body 
+	, '<ul>' || string_agg(format('<li>%s</li>', l.name), '') || '</ul>' as "Language"
+    , initcap(cds.tone) as "Tone"
+	, case cds.tone
+		when 'positive' then cds.positive_tone_score/100 
+		else cds.negative_tone_score/100 end as "Sentiment Score"
+	, initcap(cds.subjectivity) as "Subjectivity"
+	, cds.subjectivity_score/100 as "Subjectivity Score"
+	, null::date as "Porcessed Date"
+	, null::text as "Process Status"
+from document d  
+        inner join document_metadata_attributes dma on (d.doc_id = dma.doc_id)
+        inner join content_metadata_attributes cma on (d.doc_id=cma.doc_id and cma.attribute_index = 1)
+		left outer join ca_summary cas on (d.doc_id = cas.doc_id)
+		left outer join language l on (d.doc_id = l.doc_id)
+		left outer join ca_document_sentiments cds on (d.doc_id = cds.doc_id)		
+where
+		d.doc_id > 0
+		-- ADDITIONAL CONDITIONS PLACE HOLDER
+group by
+	  d.doc_id
+	, d.repository_id
+	, dma.name
+	, dma.normalized_file_type
+	, dma.content_stream_length
+	, dma.path
+	, dma.created_by
+	, cma.content_creation_date
+	, dma.last_modification_date
+	, dma.direct_link
+	, coalesce(cas.summary, cma.summary, null)
+	, cma.summary
+    , cds.tone
+	, cds.positive_tone_score
+	, cds.negative_tone_score
+	, cds.subjectivity
+	, cds.subjectivity_score
+]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsRepository" id="1156">
+            <property name="isVisible">false</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <text-property name="heading">repository_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">System Type</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">System Type</text-property>
+                    <text-property name="heading">System Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Repository Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <text-property name="heading">Repository Name</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">System Type</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Repository Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if ( (params["prmRepositoryIds"].value !== null) &amp;&amp; ("" !== params["prmRepositoryIds"].value)) {
+	var repositoryCondition = " repository_id in (" + params["prmRepositoryIds"].value + ") " ;
+	var placeHolderString = "-- ADDITIONAL CONDITIONS PLACE HOLDER";
+	var query = this.queryText;
+	var placeHolderPos = query.indexOf(placeHolderString);
+	if (placeHolderPos > 0) {
+		query = query.substring(0, placeHolderPos);
+		query += " AND " + repositoryCondition;
+		query += this.queryText.substring(placeHolderPos + placeHolderString.length, this.queryText.length())
+		this.queryText = query;
+	}
+	
+}
+]]></method>
+            <property name="dataSource">Crawler</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">repository_id</property>
+                    <property name="nativeName">repository_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">System Type</property>
+                    <property name="nativeName">System Type</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Repository Name</property>
+                    <property name="nativeName">Repository Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+	  repository_id::varchar 
+	, system_type as "System Type"
+	, trim(description) as "Repository Name"
+from if_repository
+where system_type != 4
+     -- ADDITIONAL CONDITIONS PLACE HOLDER 
+
+      ]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>repository_id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>repository_id</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>repository_id</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>System Type</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>System Type</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>System Type</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Repository Name</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Repository Name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Repository Name</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.excel.dataSet" name="dsFileExtensionMap" id="1368">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">ROT Type Extension</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ROT Type Extension</text-property>
+                    <text-property name="heading">ROT Type Extension</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Extension</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">File Extension</text-property>
+                    <text-property name="heading">File Extension</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ROT Type Extension</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">File Extension</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">FileExtensionMap</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ROT Type Extension</property>
+                    <property name="nativeName">ROT Type Extension</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">File Extension</property>
+                    <property name="nativeName">File Extension</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select "ROT Type Extension", "File Extension" from "/C:/Data/Solutions/Text Analytics/Development/Reports/Resources TA/Data Files/ROT File Extension Map.xlsx" : {"ROT Type Extension","ROT Type Extension",STRING;"File Extension","File Extension",STRING}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ROT Type Extension</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>ROT Type Extension</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ROT Type Extension</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>File Extension</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>File Extension</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>File Extension</design:label>
+            <design:formattingHints>
+              <design:displaySize>0</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <property name="WORKSHEETS">ROT Extensions Map</property>
+        </oda-data-set>
+        <derived-data-set extensionID="com.actuate.birt.data.join" name="dsDocument" id="1369">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">ROT Type</property>
+                    <expression name="expression" type="javascript">var rotType = null;&#13;
+var path = row["Path"];&#13;
+var ageInMonths = row["Age In Months"];&#13;
+&#13;
+// Path based rules&#13;
+if (path != null) {&#13;
+	path = path.toLowerCase();&#13;
+	if (path.indexOf("birthday") > 0&#13;
+		|| path.indexOf("bday") > 0&#13;
+		|| path.indexOf("funny") > 0&#13;
+		|| path.indexOf("xmas") > 0&#13;
+		|| path.indexOf("christmas") > 0&#13;
+		|| path.indexOf("get together") > 0&#13;
+		|| path.indexOf("gettogether") > 0) {&#13;
+		&#13;
+		rotType = "Trivial";&#13;
+	} else if (path.indexOf("known list to exclude") > 0) {&#13;
+		// list all folders that need to be considered as ROT&#13;
+		rotType = "Pre-classified"&#13;
+	} else if (path.indexOf("known list with age") > 0) {&#13;
+		// list all folders that need to be considered as ROT if aged (special)&#13;
+		// regular aging is defined below&#13;
+		if (ageInMonths > 12) {&#13;
+			rotType = "Pre-classified Old"&#13;
+		}&#13;
+	}&#13;
+}&#13;
+// Name based rules&#13;
+var docName = row["Document Name"];&#13;
+if (rotType == null &amp;&amp; docName != null) {&#13;
+	docName = docName.toLowerCase();&#13;
+	&#13;
+	if (docName.indexOf("birthday") > 0&#13;
+		|| docName.indexOf("bday") > 0&#13;
+		|| docName.indexOf("funny") > 0&#13;
+		|| docName.indexOf("xmas") > 0&#13;
+		|| docName.indexOf("christmas") > 0&#13;
+		|| docName.indexOf("get together") > 0&#13;
+		|| docName.indexOf("gettogether") > 0) {&#13;
+&#13;
+		rotType = "Trivial";	&#13;
+	} else if (docName.indexOf("copy") > 0&#13;
+		|| docName.indexOf("copies") > 0&#13;
+		|| docName.indexOf("draft") > 0&#13;
+		|| docName.indexOf("temp") > 0&#13;
+		|| docName.indexOf("backup") > 0&#13;
+		|| docName.indexOf("obsolete") > 0) {&#13;
+		if (ageInMonths > 12) {&#13;
+			rotType = "Obsolete";&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+// File Size based rules&#13;
+if (rotType == null) {&#13;
+	if (row["File Size"] &lt;= 0) {&#13;
+		rotType = "Empty File";&#13;
+	} else if (row["File Size"] >= 2147483648 ) {&#13;
+		if (ageInMonths > 24) {&#13;
+			rotType = "Large Files - Old";&#13;
+		}&#13;
+	}&#13;
+}&#13;
+// File Type based rules&#13;
+if (rotType == null) {&#13;
+	var extRotType = row["ROT Type Extension"];&#13;
+	if (extRotType != null) {&#13;
+		extRotType = extRotType.toLowerCase();&#13;
+		if (extRotType == "temporary"&#13;
+			|| extRotType == "system") {&#13;
+			rotType = row["ROT Type Extension"];&#13;
+		}&#13;
+	}&#13;
+	if (rotType == null &amp;&amp; extRotType != null) {&#13;
+		if (extRotType == "image"&#13;
+			|| extRotType == "video"&#13;
+			|| extRotType == "audio") {&#13;
+			&#13;
+			if (ageInMonths > 12) {&#13;
+				rotType = row["ROT Type Extension"] + " - Old";&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+	if (rotType == null &amp;&amp; extRotType != null) {&#13;
+		if (extRotType == "document"&#13;
+			|| extRotType == "mail") {&#13;
+			&#13;
+			if (ageInMonths > 120) {&#13;
+				rotType = row["ROT Type Extension"] + " - Old";&#13;
+			}&#13;
+		}&#13;
+	}&#13;
+}&#13;
+rotType;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Age In Months</property>
+                    <expression name="expression" type="javascript">var fileDate =  row["Last Modified Date"];&#13;
+if (fileDate == null) {&#13;
+	fileDate = row["Created Date"];&#13;
+}&#13;
+var ageInMonths = 0;&#13;
+if (fileDate != null) {&#13;
+	ageInMonths = BirtDateTime.diffMonth(fileDate, BirtDateTime.today())&#13;
+}&#13;
+ageInMonths</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">doc_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Document Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">File Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">File Size</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Path</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Path</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created By</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created By</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Last Modified Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">direct_link</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">direct_link</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Summary</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Summary</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">document_body</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">document_body</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Language</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Language</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Tone</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Tone</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Sentiment Score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Sentiment Score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Subjectivity</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Subjectivity</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Subjectivity Score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Subjectivity Score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Porcessed Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Porcessed Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Process Status</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 1</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 2</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 3</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 4</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 5</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 6</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 7</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 8</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 9</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 10</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size Display</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">mime_icon_name</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Document Extension</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">ROT Type Extension</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">ROT Type Extension</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">ROT Type</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Age In Months</property>
+                    <property name="analysis">measure</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Extension</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">File Extension</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Document Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">File Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">File Size</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Path</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Created By</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Created Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Last Modified Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">direct_link</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Summary</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">document_body</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Language</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">Tone</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">Sentiment Score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">Subjectivity</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">Subjectivity Score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">Porcessed Date</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">Process Status</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">Folder</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">Folder Level 1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">Folder Level 2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">Folder Level 3</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">Folder Level 4</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">Folder Level 5</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">Folder Level 6</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">Folder Level 7</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">Folder Level 8</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">Folder Level 9</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">Folder Level 10</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">File Size Display</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">mime_icon_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">33</property>
+                        <property name="name">Document Extension</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">34</property>
+                        <property name="name">ROT Type Extension</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">35</property>
+                        <property name="name">File Extension</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">36</property>
+                        <property name="name">ROT Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">37</property>
+                        <property name="name">Age In Months</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="inputDataSets">
+                <value>dsDocument_Initial</value>
+                <value>dsFileExtensionMap</value>
+            </simple-property-list>
+            <xml-property name="queryText"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tns:joinedDataSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.actuate.com/birt/dataset_join.xsd" xmlns:tns="http://schemas.actuate.com/birt/dataset_join.xsd">
+<tns:selectColumns>
+<tns:Column>dsDocument_Initial::doc_id</tns:Column>
+<tns:Column>dsDocument_Initial::repository_id</tns:Column>
+<tns:Column>dsDocument_Initial::Document Name</tns:Column>
+<tns:Column>dsDocument_Initial::File Type</tns:Column>
+<tns:Column>dsDocument_Initial::File Size</tns:Column>
+<tns:Column>dsDocument_Initial::Path</tns:Column>
+<tns:Column>dsDocument_Initial::Created By</tns:Column>
+<tns:Column>dsDocument_Initial::Created Date</tns:Column>
+<tns:Column>dsDocument_Initial::Last Modified Date</tns:Column>
+<tns:Column>dsDocument_Initial::direct_link</tns:Column>
+<tns:Column>dsDocument_Initial::Summary</tns:Column>
+<tns:Column>dsDocument_Initial::document_body</tns:Column>
+<tns:Column>dsDocument_Initial::Language</tns:Column>
+<tns:Column>dsDocument_Initial::Tone</tns:Column>
+<tns:Column>dsDocument_Initial::Sentiment Score</tns:Column>
+<tns:Column>dsDocument_Initial::Subjectivity</tns:Column>
+<tns:Column>dsDocument_Initial::Subjectivity Score</tns:Column>
+<tns:Column>dsDocument_Initial::Porcessed Date</tns:Column>
+<tns:Column>dsDocument_Initial::Process Status</tns:Column>
+<tns:Column>dsDocument_Initial::Folder</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 1</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 2</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 3</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 4</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 5</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 6</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 7</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 8</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 9</tns:Column>
+<tns:Column>dsDocument_Initial::Folder Level 10</tns:Column>
+<tns:Column>dsDocument_Initial::File Size Display</tns:Column>
+<tns:Column>dsDocument_Initial::mime_icon_name</tns:Column>
+<tns:Column>dsDocument_Initial::Document Extension</tns:Column>
+<tns:Column>dsFileExtensionMap::ROT Type Extension</tns:Column>
+<tns:Column>dsFileExtensionMap::File Extension</tns:Column>
+</tns:selectColumns>
+<tns:joins>
+<tns:startingDataSet Index="0" name="dsDocument_Initial"/>
+<tns:join>
+<tns:type>leftOuter</tns:type>
+<tns:dataSet Index="1" name="dsFileExtensionMap"/>
+<tns:on>
+<tns:condition>
+<tns:leftColumn>dsDocument_Initial::Document Extension</tns:leftColumn>
+<tns:rightColumn>dsFileExtensionMap::File Extension</tns:rightColumn>
+<tns:operator>eq</tns:operator>
+</tns:condition>
+</tns:on>
+</tns:join>
+</tns:joins>
+</tns:joinedDataSet>]]></xml-property>
+        </derived-data-set>
+    </data-sets>
+    <parameters>
+        <scalar-parameter name="prmRepositoryIds" id="1366">
+            <text-property name="promptText">Repository Ids (Comma separated)</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">'10030', '10020', '10070', '10040', '10021'</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <property name="linkedDataModels">
+        <linked-data-model name="Documents" id="1370">
+            <property name="aliasDataSets">
+                <alias-data-set name="dsRepository" id="1452">
+                    <property name="originDataSet">dsRepository</property>
+                </alias-data-set>
+                <alias-data-set name="dsDocument" id="1458">
+                    <property name="originDataSet">dsDocument</property>
+                </alias-data-set>
+            </property>
+            <property name="columnLinks">
+                <column-link id="1495">
+                    <property name="leftAliasDataSet">Documents/dsRepository</property>
+                    <property name="rightAliasDataSet">Documents/dsDocument</property>
+                    <property name="type">inner</property>
+                    <property name="columnLinkDetails">
+                        <column-link-detail id="1496">
+                            <structure name="leftColumn">
+                                <property name="position">1</property>
+                                <property name="name">repository_id</property>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure name="rightColumn">
+                                <property name="position">2</property>
+                                <property name="name">repository_id</property>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </column-link-detail>
+                    </property>
+                    <property name="allowPushdown">false</property>
+                </column-link>
+            </property>
+            <property name="categories">
+                <category name="Repository" id="1453">
+                    <property name="categoryColumns">
+                        <category-column name="repository_id" id="1454">
+                            <property name="aliasDataSet">Documents/dsRepository</property>
+                            <property name="resultSetColumnName">repository_id</property>
+                        </category-column>
+                        <category-column name="System Type" id="1455">
+                            <property name="aliasDataSet">Documents/dsRepository</property>
+                            <property name="resultSetColumnName">System Type</property>
+                        </category-column>
+                        <category-column name="Repository Name" id="1456">
+                            <property name="aliasDataSet">Documents/dsRepository</property>
+                            <property name="resultSetColumnName">Repository Name</property>
+                        </category-column>
+                    </property>
+                </category>
+                <category name="Document" id="1459">
+                    <property name="categoryColumns">
+                        <category-column name="doc_id" id="1460">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">doc_id</property>
+                        </category-column>
+                        <category-column name="repository_id1" id="1461">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">repository_id</property>
+                        </category-column>
+                        <category-column name="Document Name" id="1462">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Document Name</property>
+                        </category-column>
+                        <category-column name="File Type" id="1463">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">File Type</property>
+                        </category-column>
+                        <category-column name="File Size" id="1464">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">File Size</property>
+                        </category-column>
+                        <category-column name="Path" id="1465">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Path</property>
+                        </category-column>
+                        <category-column name="Created By" id="1466">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Created By</property>
+                        </category-column>
+                        <category-column name="Created Date" id="1467">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Created Date</property>
+                        </category-column>
+                        <category-column name="Last Modified Date" id="1468">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Last Modified Date</property>
+                        </category-column>
+                        <category-column name="direct_link" id="1469">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">direct_link</property>
+                        </category-column>
+                        <category-column name="Summary" id="1470">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Summary</property>
+                        </category-column>
+                        <category-column name="document_body" id="1471">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">document_body</property>
+                        </category-column>
+                        <category-column name="Language" id="1472">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Language</property>
+                        </category-column>
+                        <category-column name="Tone" id="1473">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Tone</property>
+                        </category-column>
+                        <category-column name="Sentiment Score" id="1474">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Sentiment Score</property>
+                        </category-column>
+                        <category-column name="Subjectivity" id="1475">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Subjectivity</property>
+                        </category-column>
+                        <category-column name="Subjectivity Score" id="1476">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Subjectivity Score</property>
+                        </category-column>
+                        <category-column name="Porcessed Date" id="1477">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Porcessed Date</property>
+                        </category-column>
+                        <category-column name="Process Status" id="1478">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Process Status</property>
+                        </category-column>
+                        <category-column name="Folder" id="1479">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder</property>
+                        </category-column>
+                        <category-column name="Folder Level 1" id="1480">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 1</property>
+                        </category-column>
+                        <category-column name="Folder Level 2" id="1481">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 2</property>
+                        </category-column>
+                        <category-column name="Folder Level 3" id="1482">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 3</property>
+                        </category-column>
+                        <category-column name="Folder Level 4" id="1483">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 4</property>
+                        </category-column>
+                        <category-column name="Folder Level 5" id="1484">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 5</property>
+                        </category-column>
+                        <category-column name="Folder Level 6" id="1485">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 6</property>
+                        </category-column>
+                        <category-column name="Folder Level 7" id="1486">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 7</property>
+                        </category-column>
+                        <category-column name="Folder Level 8" id="1487">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 8</property>
+                        </category-column>
+                        <category-column name="Folder Level 9" id="1488">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 9</property>
+                        </category-column>
+                        <category-column name="Folder Level 10" id="1489">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 10</property>
+                        </category-column>
+                        <category-column name="File Size Display" id="1490">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">File Size Display</property>
+                        </category-column>
+                        <category-column name="mime_icon_name" id="1491">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">mime_icon_name</property>
+                        </category-column>
+                        <category-column name="Document Extension" id="1492">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Document Extension</property>
+                        </category-column>
+                        <category-column name="ROT Type Extension" id="1493">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">ROT Type Extension</property>
+                        </category-column>
+                        <category-column name="ROT Type" id="1494">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">ROT Type</property>
+                        </category-column>
+                    </property>
+                </category>
+            </property>
+            <property name="pushDown">true</property>
+        </linked-data-model>
+    </property>
+</datamart>

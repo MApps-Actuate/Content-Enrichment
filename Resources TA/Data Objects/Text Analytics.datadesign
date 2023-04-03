@@ -1,0 +1,2413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <list-property name="userProperties">
+        <structure>
+            <property name="name">1095.dsRepository.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsRepository.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsRepository.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsRepository.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsRepository.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1170.dsCategorizationSummary.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsCategory.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsDocument.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsConcept.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">1095.dsEntity.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+    </list-property>
+    <property name="1095.dsRepository.x">61</property>
+    <property name="1095.dsRepository.y">327</property>
+    <property name="1095.dsRepository.width">150</property>
+    <property name="1095.dsRepository.height">200</property>
+    <property name="1170.dsRepository.x">370</property>
+    <property name="1170.dsRepository.y">11</property>
+    <property name="1170.dsRepository.width">150</property>
+    <property name="1170.dsRepository.height">200</property>
+    <property name="1170.dsCategorizationSummary.x">40</property>
+    <property name="1170.dsCategorizationSummary.y">17</property>
+    <property name="1170.dsCategorizationSummary.width">150</property>
+    <property name="1170.dsCategorizationSummary.height">200</property>
+    <property name="1095.dsCategory.x">559</property>
+    <property name="1095.dsCategory.y">83</property>
+    <property name="1095.dsCategory.width">150</property>
+    <property name="1095.dsCategory.height">200</property>
+    <property name="1095.dsDocument.x">298</property>
+    <property name="1095.dsDocument.y">331</property>
+    <property name="1095.dsDocument.width">150</property>
+    <property name="1095.dsDocument.height">200</property>
+    <property name="1095.dsConcept.x">545</property>
+    <property name="1095.dsConcept.y">554</property>
+    <property name="1095.dsConcept.width">150</property>
+    <property name="1095.dsConcept.height">200</property>
+    <property name="1095.dsEntity.x">556</property>
+    <property name="1095.dsEntity.y">326</property>
+    <property name="1095.dsEntity.width">150</property>
+    <property name="1095.dsEntity.height">200</property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Pipeline" id="2">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>PostgresSupportSP</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8888/magellan</property>
+            <property name="odaUser">maguser</property>
+            <property name="OdaConnProfileName">Pipeline</property>
+            <property name="OdaConnProfileStorePath">Resources TA/Text Analytics Profile.otconnprofiles</property>
+        </oda-data-source>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Crawler" id="1092">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>PostgresSupportSP</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8882/crawler_repository</property>
+            <property name="odaUser">postgres</property>
+            <property name="OdaConnProfileName">Crawler</property>
+            <property name="OdaConnProfileStorePath">Resources TA/Text Analytics Profile.otconnprofiles</property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsDocument" id="1093">
+            <property name="isVisible">false</property>
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">Folder</property>
+                    <expression name="expression" type="javascript">var path = "";&#13;
+if (row["Path"] != null) {&#13;
+	var folderAndIds = row["Path"].split(";");&#13;
+	for (var idx in folderAndIds) {&#13;
+		var folderAndId = folderAndIds[idx];&#13;
+		if (!folderAndId) {&#13;
+			continue;&#13;
+		}&#13;
+		var folder;&#13;
+		var firstPos = folderAndId.indexOf("\"");&#13;
+		if (firstPos > -1 &amp;&amp; firstPos + 1 &lt; folderAndId.length) {&#13;
+			var lastPos = folderAndId.indexOf("\"", firstPos + 1);&#13;
+			if (lastPos > -1) {&#13;
+				folder = folderAndId.substring(firstPos + 1, lastPos);&#13;
+			}&#13;
+		}&#13;
+		if (!folder || folder == null) {&#13;
+			continue;&#13;
+		}&#13;
+		if (path) {&#13;
+			path += " / ";&#13;
+		}&#13;
+		path += folder;&#13;
+	}&#13;
+} else {&#13;
+	path = null;&#13;
+}&#13;
+path;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 1</property>
+                    <expression name="expression" type="javascript">var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length == 1 &amp;&amp; filearr.length == 1) {&#13;
+		folder = filearr[0].split("-")[0];&#13;
+	} else if (csarr.length >= 1 &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[0];&#13;
+	} else {&#13;
+		if (filearr.length >=1 ) {&#13;
+			if (filearr[0].split("-").length >= 1) {&#13;
+				folder = filearr[0].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 2</property>
+                    <expression name="expression" type="javascript">var level = 2;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 3</property>
+                    <expression name="expression" type="javascript">var level = 3;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 4</property>
+                    <expression name="expression" type="javascript">var level = 4;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 5</property>
+                    <expression name="expression" type="javascript">var level = 5;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 6</property>
+                    <expression name="expression" type="javascript">var level = 6;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 7</property>
+                    <expression name="expression" type="javascript">var level = 7;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 8</property>
+                    <expression name="expression" type="javascript">var level = 8;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 9</property>
+                    <expression name="expression" type="javascript">var level = 9;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder Level 10</property>
+                    <expression name="expression" type="javascript">var level = 10;&#13;
+var fullPath = row["Folder"];&#13;
+var folder = null; &#13;
+if (fullPath != null &amp;&amp; fullPath !="") {&#13;
+	if (fullPath.startsWith("/")) {&#13;
+		fullPath = fullPath.substring(1);&#13;
+	}&#13;
+	var csarr = fullPath.split("/");&#13;
+	var filearr = fullPath.split(";");&#13;
+	if (csarr.length >= level &amp;&amp; filearr.length &lt;= 1) {&#13;
+		folder = csarr[level-1];&#13;
+	} else {&#13;
+		if (filearr.length >= level ) {&#13;
+			if (filearr[level-1].split("-").length >= 1) {&#13;
+				folder = filearr[level-1].split("-")[0]&#13;
+			} &#13;
+		}&#13;
+	}&#13;
+}&#13;
+if (folder != null) {&#13;
+	if (folder.startsWith('"')) { &#13;
+		folder = folder.substring(1);&#13;
+	}&#13;
+	if (folder.endsWith('"')) {&#13;
+		folder = folder.substring(0, folder.length-1);&#13;
+	}&#13;
+	folder = folder.trim();&#13;
+}&#13;
+folder;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">File Size Display</property>
+                    <expression name="expression" type="javascript">var val = row["File Size"]&#13;
+var absValue = Math.abs(val);&#13;
+if (absValue >= 1125899906842624) {&#13;
+	formattedValue = Formatter.format(val / 1125899906842624, "#,###.00 PB");&#13;
+} else if (absValue >= 1099511627776) {&#13;
+	formattedValue = Formatter.format(val / 1099511627776, "#,###.00 TB");&#13;
+} else if (absValue >= 1073741824) {&#13;
+	formattedValue = Formatter.format(val / 1073741824, "#,###.00 GB");&#13;
+} else if (absValue >= 1048576) {&#13;
+	formattedValue = Formatter.format(val / 1048576, "#,###.00 MB");&#13;
+} else if (absValue >= 1024) {&#13;
+	formattedValue = Formatter.format(val / 1024, "#,###.00 KB");&#13;
+} else {&#13;
+	formattedValue = Formatter.format(val, "#,### Bytes");&#13;
+}&#13;
+formattedValue;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">mime_icon_name</property>
+                    <expression name="expression" type="javascript">var fileType = "other";&#13;
+var normalizedFileType = row["File Type"];&#13;
+if (normalizedFileType) {&#13;
+    normalizedFileType = normalizedFileType.trim().toLowerCase();&#13;
+    switch (normalizedFileType) {&#13;
+	case "archives":&#13;
+	case "folder":&#13;
+	case "html":&#13;
+	case "image":&#13;
+	case "other":&#13;
+	case "pdf":&#13;
+	case "powerpoint":&#13;
+	case "video":&#13;
+	case "email":&#13;
+	case "text":&#13;
+	case "zip":&#13;
+	case "tweet":&#13;
+	    fileType = normalizedFileType;&#13;
+	    break;&#13;
+	case "ms word":&#13;
+	    fileType = "word";&#13;
+	    break;&#13;
+	case "ms excel":&#13;
+	    fileType = "excel";&#13;
+	    break;&#13;
+    }&#13;
+}&#13;
+"mime_" + fileType + ".svg";</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">doc_id</text-property>
+                    <text-property name="heading">doc_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <text-property name="heading">repository_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Document Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <text-property name="heading">Document Name</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">File Type</text-property>
+                    <text-property name="heading">File Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">File Size</text-property>
+                    <text-property name="heading">File Size</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Path</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Path</text-property>
+                    <text-property name="heading">Path</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created By</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created By</text-property>
+                    <text-property name="heading">Created By</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created Date</text-property>
+                    <text-property name="heading">Created Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Last Modified Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                    <text-property name="heading">Last Modified Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">direct_link</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">direct_link</text-property>
+                    <text-property name="heading">direct_link</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Summary</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Summary</text-property>
+                    <text-property name="heading">Summary</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">document_body</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">document_body</text-property>
+                    <text-property name="heading">document_body</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Language</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Language</text-property>
+                    <text-property name="heading">Language</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Tone</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Tone</text-property>
+                    <text-property name="heading">Tone</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Sentiment Score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Sentiment Score</text-property>
+                    <text-property name="heading">Sentiment Score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Subjectivity</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Subjectivity</text-property>
+                    <text-property name="heading">Subjectivity</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Subjectivity Score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Subjectivity Score</text-property>
+                    <text-property name="heading">Subjectivity Score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Porcessed Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Porcessed Date</text-property>
+                    <text-property name="heading">Porcessed Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Process Status</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <text-property name="heading">Process Status</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 1</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 2</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 3</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 4</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 5</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 6</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 7</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 8</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 9</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder Level 10</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size Display</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">mime_icon_name</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Document Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">File Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">File Size</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Path</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Created By</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Created Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Last Modified Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">direct_link</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Summary</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">document_body</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Language</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">Tone</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">Sentiment Score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">Subjectivity</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">Subjectivity Score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">Porcessed Date</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">Process Status</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">Folder</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">Folder Level 1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">Folder Level 2</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">Folder Level 3</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">Folder Level 4</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">Folder Level 5</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">Folder Level 6</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">Folder Level 7</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">Folder Level 8</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">Folder Level 9</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">30</property>
+                        <property name="name">Folder Level 10</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">31</property>
+                        <property name="name">File Size Display</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">32</property>
+                        <property name="name">mime_icon_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if ( (params["prmRepositoryIds"].value !== null) &amp;&amp; ("" !== params["prmRepositoryIds"].value)) {
+	var repositoryCondition = " repository_id in (" + params["prmRepositoryIds"].value + ") " ;
+	var placeHolderString = "-- ADDITIONAL CONDITIONS PLACE HOLDER";
+	var query = this.queryText;
+	var placeHolderPos = query.indexOf(placeHolderString);
+	if (placeHolderPos > 0) {
+		query = query.substring(0, placeHolderPos);
+		query += " AND " + repositoryCondition;
+		query += this.queryText.substring(placeHolderPos + placeHolderString.length, this.queryText.length())
+		this.queryText = query;
+	}
+	
+}
+]]></method>
+            <property name="dataSource">Pipeline</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">doc_id</property>
+                    <property name="nativeName">doc_id</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">repository_id</property>
+                    <property name="nativeName">repository_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Document Name</property>
+                    <property name="nativeName">Document Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">File Type</property>
+                    <property name="nativeName">File Type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">File Size</property>
+                    <property name="nativeName">File Size</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">Path</property>
+                    <property name="nativeName">Path</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">Created By</property>
+                    <property name="nativeName">Created By</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">Created Date</property>
+                    <property name="nativeName">Created Date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">Last Modified Date</property>
+                    <property name="nativeName">Last Modified Date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">direct_link</property>
+                    <property name="nativeName">direct_link</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">Summary</property>
+                    <property name="nativeName">Summary</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">document_body</property>
+                    <property name="nativeName">document_body</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">Language</property>
+                    <property name="nativeName">Language</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">Tone</property>
+                    <property name="nativeName">Tone</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">Sentiment Score</property>
+                    <property name="nativeName">Sentiment Score</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">Subjectivity</property>
+                    <property name="nativeName">Subjectivity</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">Subjectivity Score</property>
+                    <property name="nativeName">Subjectivity Score</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">Porcessed Date</property>
+                    <property name="nativeName">Porcessed Date</property>
+                    <property name="dataType">date</property>
+                    <property name="nativeDataType">91</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">Process Status</property>
+                    <property name="nativeName">Process Status</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+	  d.doc_id
+	, d.repository_id
+	, dma.name as "Document Name"
+	, dma.normalized_file_type as "File Type"
+	, dma.content_stream_length as "File Size"
+	, dma.path as "Path"
+	, dma.created_by as "Created By"
+	, cma.content_creation_date as "Created Date"
+	, dma.last_modification_date as "Last Modified Date"
+	, dma.direct_link
+	, coalesce(cas.summary, cma.summary, null) as "Summary"
+	, cma.summary as document_body 
+	, '<ul>' || string_agg(format('<li>%s</li>', l.name), '') || '</ul>' as "Language"
+    , initcap(cds.tone) as "Tone"
+	, case cds.tone
+		when 'positive' then cds.positive_tone_score/100 
+		else cds.negative_tone_score/100 end as "Sentiment Score"
+	, initcap(cds.subjectivity) as "Subjectivity"
+	, cds.subjectivity_score/100 as "Subjectivity Score"
+	, '2021-11-02'::Date as "Porcessed Date"
+	, case when d.doc_id % 100 > 0 then 'Successfully Completed' 
+		else 'Failed' end as "Process Status"
+from document d  
+        inner join document_metadata_attributes dma on (d.doc_id = dma.doc_id)
+        inner join content_metadata_attributes cma on (d.doc_id=cma.doc_id and cma.attribute_index = 1)
+		left outer join ca_summary cas on (d.doc_id = cas.doc_id)
+		left outer join language l on (d.doc_id = l.doc_id)
+		left outer join ca_document_sentiments cds on (d.doc_id = cds.doc_id)		
+where
+		d.doc_id > 0
+		-- ADDITIONAL CONDITIONS PLACE HOLDER
+group by
+	  d.doc_id
+	, d.repository_id
+	, dma.name
+	, dma.normalized_file_type
+	, dma.content_stream_length
+	, dma.path
+	, dma.created_by
+	, cma.content_creation_date
+	, dma.last_modification_date
+	, dma.direct_link
+	, coalesce(cas.summary, cma.summary, null)
+	, cma.summary
+    , cds.tone
+	, cds.positive_tone_score
+	, cds.negative_tone_score
+	, cds.subjectivity
+	, cds.subjectivity_score
+]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsRepository" id="1156">
+            <property name="isVisible">false</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <text-property name="heading">repository_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">System Type</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">System Type</text-property>
+                    <text-property name="heading">System Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Repository Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <text-property name="heading">Repository Name</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">System Type</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Repository Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if ( (params["prmRepositoryIds"].value !== null) &amp;&amp; ("" !== params["prmRepositoryIds"].value)) {
+	var repositoryCondition = " repository_id in (" + params["prmRepositoryIds"].value + ") " ;
+	var placeHolderString = "-- ADDITIONAL CONDITIONS PLACE HOLDER";
+	var query = this.queryText;
+	var placeHolderPos = query.indexOf(placeHolderString);
+	if (placeHolderPos > 0) {
+		query = query.substring(0, placeHolderPos);
+		query += " AND " + repositoryCondition;
+		query += this.queryText.substring(placeHolderPos + placeHolderString.length, this.queryText.length())
+		this.queryText = query;
+	}
+	
+}
+]]></method>
+            <property name="dataSource">Crawler</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">repository_id</property>
+                    <property name="nativeName">repository_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">System Type</property>
+                    <property name="nativeName">System Type</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Repository Name</property>
+                    <property name="nativeName">Repository Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+	  repository_id::varchar 
+	, system_type as "System Type"
+	, trim(description) as "Repository Name"
+from if_repository
+where system_type != 4
+     -- ADDITIONAL CONDITIONS PLACE HOLDER 
+
+      ]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>repository_id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>repository_id</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>repository_id</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>System Type</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>System Type</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>System Type</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Repository Name</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Repository Name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Repository Name</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsCategory" id="1330">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">category_doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">category_doc_id</text-property>
+                    <text-property name="heading">category_doc_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">categoryid</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">categoryid</text-property>
+                    <text-property name="heading">categoryid</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">category</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">category</text-property>
+                    <text-property name="heading">category</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">category_weight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">category_weight</text-property>
+                    <text-property name="heading">category_weight</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">category_kb_name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">category_kb_name</text-property>
+                    <text-property name="heading">category_kb_name</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">category_kb_relevancy</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">category_kb_relevancy</text-property>
+                    <text-property name="heading">category_kb_relevancy</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">category_doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">categoryid</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">category</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">category_weight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">category_kb_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">category_kb_relevancy</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if ( (params["prmRepositoryIds"].value !== null) &amp;&amp; ("" !== params["prmRepositoryIds"].value)) {
+	var repositoryCondition = " repository_id in (" + params["prmRepositoryIds"].value + ") " ;
+	var placeHolderString = "-- ADDITIONAL CONDITIONS PLACE HOLDER";
+	var query = this.queryText;
+	var placeHolderPos = query.indexOf(placeHolderString);
+	if (placeHolderPos > 0) {
+		query = query.substring(0, placeHolderPos);
+		query += " AND " + repositoryCondition;
+		query += this.queryText.substring(placeHolderPos + placeHolderString.length, this.queryText.length())
+		this.queryText = query;
+	}
+	
+}
+]]></method>
+            <property name="dataSource">Pipeline</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">category_doc_id</property>
+                    <property name="nativeName">category_doc_id</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">categoryid</property>
+                    <property name="nativeName">categoryid</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">category</property>
+                    <property name="nativeName">category</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">category_weight</property>
+                    <property name="nativeName">category_weight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">category_kb_name</property>
+                    <property name="nativeName">category_kb_name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">category_kb_relevancy</property>
+                    <property name="nativeName">category_kb_relevancy</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select
+	  d.doc_id as category_doc_id
+	, c.id as categoryid
+	, c.name as category
+	, c.weight/100 as category_weight
+	, c.kb_name as category_kb_name
+	, initcap(c.kb_relevancy) as category_kb_relevancy
+from document d  
+        inner join ca_category c on (d.doc_id = c.doc_id)
+where
+	  c.kb_relevancy <> 'poor'
+  	  -- ADDITIONAL CONDITIONS PLACE HOLDER 
+]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsEntity" id="1331">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">entity_doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">entity_doc_id</text-property>
+                    <text-property name="heading">entity_doc_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">entity_cartridge</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">entity_cartridge</text-property>
+                    <text-property name="heading">entity_cartridge</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">entity_cartridge_name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">entity_cartridge_name</text-property>
+                    <text-property name="heading">entity_cartridge_name</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">entity</property>
+                    <property name="analysis">dimension</property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">entity_term_index</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">entity_term_index</text-property>
+                    <text-property name="heading">entity_term_index</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">entity_confidence_score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">entity_confidence_score</text-property>
+                    <text-property name="heading">entity_confidence_score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">entity_relevancy_score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">entity_relevancy_score</text-property>
+                    <text-property name="heading">entity_relevancy_score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">entity_frequency</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">entity_frequency</text-property>
+                    <text-property name="heading">entity_frequency</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">entity_doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">entity_cartridge</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">entity_cartridge_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">entity</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">entity_term_index</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">entity_confidence_score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">entity_relevancy_score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">entity_frequency</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if ( (params["prmRepositoryIds"].value !== null) &amp;&amp; ("" !== params["prmRepositoryIds"].value)) {
+	var repositoryCondition = " repository_id in (" + params["prmRepositoryIds"].value + ") " ;
+	var placeHolderString = "-- ADDITIONAL CONDITIONS PLACE HOLDER";
+	var query = this.queryText;
+	var placeHolderPos = query.indexOf(placeHolderString);
+	if (placeHolderPos > 0) {
+		query = query.substring(0, placeHolderPos);
+		query += " AND " + repositoryCondition;
+		query += this.queryText.substring(placeHolderPos + placeHolderString.length, this.queryText.length())
+		this.queryText = query;
+	}
+	
+}
+]]></method>
+            <property name="dataSource">Pipeline</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">entity_doc_id</property>
+                    <property name="nativeName">entity_doc_id</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">entity_cartridge</property>
+                    <property name="nativeName">entity_cartridge</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">entity_cartridge_name</property>
+                    <property name="nativeName">entity_cartridge_name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">entity</property>
+                    <property name="nativeName">entity</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">entity_term_index</property>
+                    <property name="nativeName">entity_term_index</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">entity_confidence_score</property>
+                    <property name="nativeName">entity_confidence_score</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">entity_relevancy_score</property>
+                    <property name="nativeName">entity_relevancy_score</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">entity_frequency</property>
+                    <property name="nativeName">entity_frequency</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+	  d.doc_id as entity_doc_id
+	, cat.cartridge as entity_cartridge
+	, case cat.cartridge
+		when 'ON' then 'Organizations'
+		when 'GL' then 'Places'
+		when 'DT' then 'Dates'
+		when 'PN' then 'Persons'
+		when 'DriversLicence' then 'Drivers Licence'
+		when 'BankAccount' then 'Bank Account'
+		when 'CreditCard' then 'Credit Card'
+		when 'SSN' then 'Social Security Number'
+		else cat.cartridge end as entity_cartridge_name
+	, coalesce(cat.main_term_value, cat.normalized_name, cat.client_normalized_name) as entity
+	, cat.term_index as entity_term_index
+	, cat.confidence_score/100 as entity_confidence_score
+	, cat.relevancy_score/100 as entity_relevancy_score
+	, cat.frequency as entity_frequency
+from document d  
+	inner join ca_term cat on (d.doc_id = cat.doc_id)
+where relevancy_score >= 30
+  	  -- ADDITIONAL CONDITIONS PLACE HOLDER 
+]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsConcept" id="1332">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">concept_doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">concept_doc_id</text-property>
+                    <text-property name="heading">concept_doc_id</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">concept</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">concept</text-property>
+                    <text-property name="heading">concept</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">concept_frequency</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">concept_frequency</text-property>
+                    <text-property name="heading">concept_frequency</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">concept_relevancy_score</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">concept_relevancy_score</text-property>
+                    <text-property name="heading">concept_relevancy_score</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">concept_type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">concept_type</text-property>
+                    <text-property name="heading">concept_type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">concept_doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">concept</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">concept_frequency</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">concept_relevancy_score</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">concept_type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if ( (params["prmRepositoryIds"].value !== null) &amp;&amp; ("" !== params["prmRepositoryIds"].value)) {
+	var repositoryCondition = " repository_id in (" + params["prmRepositoryIds"].value + ") " ;
+	var placeHolderString = "-- ADDITIONAL CONDITIONS PLACE HOLDER";
+	var query = this.queryText;
+	var placeHolderPos = query.indexOf(placeHolderString);
+	if (placeHolderPos > 0) {
+		query = query.substring(0, placeHolderPos);
+		query += " AND " + repositoryCondition;
+		query += this.queryText.substring(placeHolderPos + placeHolderString.length, this.queryText.length())
+		this.queryText = query;
+	}
+	
+}
+]]></method>
+            <property name="dataSource">Pipeline</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">concept_doc_id</property>
+                    <property name="nativeName">concept_doc_id</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">concept</property>
+                    <property name="nativeName">concept</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">concept_frequency</property>
+                    <property name="nativeName">concept_frequency</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">concept_relevancy_score</property>
+                    <property name="nativeName">concept_relevancy_score</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">2</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">concept_type</property>
+                    <property name="nativeName">concept_type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select
+	  d.doc_id as concept_doc_id 
+	, cc.name as concept
+	, cc.frequency as concept_frequency
+	, cc.relevancy/100 as concept_relevancy_score
+	, case cc.is_complex 
+		when 1 then 'Complex Concepts' 
+		else 'Simple Concepts' end as concept_type
+from document d  
+	inner join ca_concept cc on (d.doc_id = cc.doc_id)
+where
+	    cc.relevancy >= 30
+  	  -- ADDITIONAL CONDITIONS PLACE HOLDER 
+	    
+]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>concept_doc_id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>-5</design:nativeDataTypeCode>
+            <design:precision>19</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>concept_doc_id</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>concept_doc_id</design:label>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>concept</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>100</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>concept</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>concept</design:label>
+            <design:formattingHints>
+              <design:displaySize>100</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>concept_frequency</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>11</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>concept_frequency</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>concept_frequency</design:label>
+            <design:formattingHints>
+              <design:displaySize>12</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>concept_relevancy_score</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>2</design:nativeDataTypeCode>
+            <design:precision>0</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>concept_relevancy_score</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>concept_relevancy_score</design:label>
+            <design:formattingHints>
+              <design:displaySize>131089</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>concept_type</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>concept_type</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>concept_type</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <parameters>
+        <scalar-parameter name="prmRepositoryIds" id="1366">
+            <text-property name="promptText">Repository Ids (Comma separated)</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">'10030', '10020', '10070', '10040', '10021'</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <property name="linkedDataModels">
+        <linked-data-model name="Documents" id="1095">
+            <property name="aliasDataSets">
+                <alias-data-set name="dsDocument" id="1291">
+                    <property name="originDataSet">dsDocument</property>
+                </alias-data-set>
+                <alias-data-set name="dsRepository" id="1322">
+                    <property name="originDataSet">dsRepository</property>
+                </alias-data-set>
+                <alias-data-set name="dsCategory" id="1333">
+                    <property name="originDataSet">dsCategory</property>
+                </alias-data-set>
+                <alias-data-set name="dsConcept" id="1343">
+                    <property name="originDataSet">dsConcept</property>
+                </alias-data-set>
+                <alias-data-set name="dsEntity" id="1350">
+                    <property name="originDataSet">dsEntity</property>
+                </alias-data-set>
+            </property>
+            <property name="columnLinks">
+                <column-link id="1167">
+                    <property name="leftAliasDataSet">Documents/dsDocument</property>
+                    <property name="rightAliasDataSet">Documents/dsRepository</property>
+                    <property name="type">inner</property>
+                    <property name="columnLinkDetails">
+                        <column-link-detail id="1168">
+                            <structure name="leftColumn">
+                                <property name="position">2</property>
+                                <property name="name">repository_id</property>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure name="rightColumn">
+                                <property name="position">1</property>
+                                <property name="name">repository_id</property>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </column-link-detail>
+                    </property>
+                    <property name="allowPushdown">false</property>
+                </column-link>
+                <column-link id="1341">
+                    <property name="leftAliasDataSet">Documents/dsDocument</property>
+                    <property name="rightAliasDataSet">Documents/dsCategory</property>
+                    <property name="type">left-out</property>
+                    <property name="columnLinkDetails">
+                        <column-link-detail id="1342">
+                            <structure name="leftColumn">
+                                <property name="position">1</property>
+                                <property name="name">doc_id</property>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure name="rightColumn">
+                                <property name="position">1</property>
+                                <property name="name">category_doc_id</property>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                        </column-link-detail>
+                    </property>
+                    <property name="allowPushdown">false</property>
+                </column-link>
+                <column-link id="1360">
+                    <property name="leftAliasDataSet">Documents/dsDocument</property>
+                    <property name="rightAliasDataSet">Documents/dsEntity</property>
+                    <property name="type">left-out</property>
+                    <property name="columnLinkDetails">
+                        <column-link-detail id="1361">
+                            <structure name="leftColumn">
+                                <property name="position">1</property>
+                                <property name="name">doc_id</property>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure name="rightColumn">
+                                <property name="position">1</property>
+                                <property name="name">entity_doc_id</property>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                        </column-link-detail>
+                    </property>
+                    <property name="allowPushdown">false</property>
+                </column-link>
+                <column-link id="1362">
+                    <property name="leftAliasDataSet">Documents/dsDocument</property>
+                    <property name="rightAliasDataSet">Documents/dsConcept</property>
+                    <property name="type">left-out</property>
+                    <property name="columnLinkDetails">
+                        <column-link-detail id="1363">
+                            <structure name="leftColumn">
+                                <property name="position">1</property>
+                                <property name="name">doc_id</property>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure name="rightColumn">
+                                <property name="position">1</property>
+                                <property name="name">concept_doc_id</property>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                        </column-link-detail>
+                    </property>
+                    <property name="allowPushdown">false</property>
+                </column-link>
+            </property>
+            <property name="drillPaths">
+                <drill-path id="1169">
+                    <text-property name="displayName">Folder</text-property>
+                    <simple-property-list name="drillPathColumns">
+                        <value>dataSetRow["Repository Name"]</value>
+                        <value>dataSetRow["Folder Level 1"]</value>
+                        <value>dataSetRow["Folder Level 2"]</value>
+                        <value>dataSetRow["Folder Level 3"]</value>
+                        <value>dataSetRow["Folder Level 4"]</value>
+                        <value>dataSetRow["Folder Level 5"]</value>
+                        <value>dataSetRow["Folder Level 6"]</value>
+                        <value>dataSetRow["Folder Level 7"]</value>
+                        <value>dataSetRow["Folder Level 8"]</value>
+                        <value>dataSetRow["Folder Level 9"]</value>
+                        <value>dataSetRow["Folder Level 10"]</value>
+                    </simple-property-list>
+                </drill-path>
+            </property>
+            <property name="categories">
+                <category name="Document" id="1292">
+                    <property name="categoryColumns">
+                        <category-column name="doc_id" id="1293">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">doc_id</property>
+                        </category-column>
+                        <category-column name="Document Name" id="1295">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Document Name</property>
+                        </category-column>
+                        <category-column name="File Type" id="1296">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">File Type</property>
+                        </category-column>
+                        <category-column name="File Size" id="1297">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">File Size</property>
+                        </category-column>
+                        <category-column name="Created By" id="1299">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Created By</property>
+                        </category-column>
+                        <category-column name="Created Date" id="1300">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Created Date</property>
+                        </category-column>
+                        <category-column name="Last Modified Date" id="1301">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Last Modified Date</property>
+                        </category-column>
+                        <category-column name="direct_link" id="1302">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">direct_link</property>
+                        </category-column>
+                        <category-column name="Summary" id="1303">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Summary</property>
+                        </category-column>
+                        <category-column name="Language" id="1304">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Language</property>
+                        </category-column>
+                        <category-column name="Tone" id="1305">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Tone</property>
+                        </category-column>
+                        <category-column name="Sentiment Score" id="1306">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Sentiment Score</property>
+                        </category-column>
+                        <category-column name="Subjectivity" id="1307">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Subjectivity</property>
+                        </category-column>
+                        <category-column name="Subjectivity Score" id="1308">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Subjectivity Score</property>
+                        </category-column>
+                        <category-column name="Porcessed Date" id="1309">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Porcessed Date</property>
+                        </category-column>
+                        <category-column name="Process Status" id="1329">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Process Status</property>
+                        </category-column>
+                        <category-column name="Folder" id="1311">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder</property>
+                        </category-column>
+                        <category-column name="Folder Level 1" id="1312">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 1</property>
+                        </category-column>
+                        <category-column name="Folder Level 2" id="1313">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 2</property>
+                        </category-column>
+                        <category-column name="Folder Level 3" id="1314">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 3</property>
+                        </category-column>
+                        <category-column name="Folder Level 4" id="1315">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 4</property>
+                        </category-column>
+                        <category-column name="Folder Level 5" id="1316">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 5</property>
+                        </category-column>
+                        <category-column name="Folder Level 6" id="1317">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 6</property>
+                        </category-column>
+                        <category-column name="Folder Level 7" id="1318">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 7</property>
+                        </category-column>
+                        <category-column name="Folder Level 8" id="1319">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 8</property>
+                        </category-column>
+                        <category-column name="Folder Level 9" id="1320">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 9</property>
+                        </category-column>
+                        <category-column name="Folder Level 10" id="1321">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">Folder Level 10</property>
+                        </category-column>
+                        <category-column name="File Size Display" id="1327">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">File Size Display</property>
+                        </category-column>
+                        <category-column name="mime_icon_name" id="1328">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">mime_icon_name</property>
+                        </category-column>
+                        <category-column name="document_body" id="1364">
+                            <property name="aliasDataSet">Documents/dsDocument</property>
+                            <property name="resultSetColumnName">document_body</property>
+                        </category-column>
+                    </property>
+                </category>
+                <category name="Repository" id="1323">
+                    <property name="categoryColumns">
+                        <category-column name="repository_id" id="1324">
+                            <property name="aliasDataSet">Documents/dsRepository</property>
+                            <property name="resultSetColumnName">repository_id</property>
+                        </category-column>
+                        <category-column name="System Type" id="1325">
+                            <property name="aliasDataSet">Documents/dsRepository</property>
+                            <property name="resultSetColumnName">System Type</property>
+                        </category-column>
+                        <category-column name="Repository Name" id="1326">
+                            <property name="aliasDataSet">Documents/dsRepository</property>
+                            <property name="resultSetColumnName">Repository Name</property>
+                        </category-column>
+                    </property>
+                </category>
+                <category name="Category" id="1334">
+                    <property name="categoryColumns">
+                        <category-column name="category_doc_id" id="1335">
+                            <property name="aliasDataSet">Documents/dsCategory</property>
+                            <property name="resultSetColumnName">category_doc_id</property>
+                        </category-column>
+                        <category-column name="categoryid" id="1336">
+                            <property name="aliasDataSet">Documents/dsCategory</property>
+                            <property name="resultSetColumnName">categoryid</property>
+                        </category-column>
+                        <category-column name="category" id="1337">
+                            <property name="aliasDataSet">Documents/dsCategory</property>
+                            <property name="resultSetColumnName">category</property>
+                        </category-column>
+                        <category-column name="category_weight" id="1338">
+                            <property name="aliasDataSet">Documents/dsCategory</property>
+                            <property name="resultSetColumnName">category_weight</property>
+                        </category-column>
+                        <category-column name="category_kb_name" id="1339">
+                            <property name="aliasDataSet">Documents/dsCategory</property>
+                            <property name="resultSetColumnName">category_kb_name</property>
+                        </category-column>
+                        <category-column name="category_kb_relevancy" id="1365">
+                            <property name="aliasDataSet">Documents/dsCategory</property>
+                            <property name="resultSetColumnName">category_kb_relevancy</property>
+                        </category-column>
+                    </property>
+                </category>
+                <category name="Concept" id="1344">
+                    <property name="categoryColumns">
+                        <category-column name="concept_doc_id" id="1345">
+                            <property name="aliasDataSet">Documents/dsConcept</property>
+                            <property name="resultSetColumnName">concept_doc_id</property>
+                        </category-column>
+                        <category-column name="concept" id="1346">
+                            <property name="aliasDataSet">Documents/dsConcept</property>
+                            <property name="resultSetColumnName">concept</property>
+                        </category-column>
+                        <category-column name="concept_frequency" id="1347">
+                            <property name="aliasDataSet">Documents/dsConcept</property>
+                            <property name="resultSetColumnName">concept_frequency</property>
+                        </category-column>
+                        <category-column name="concept_relevancy_score" id="1348">
+                            <property name="aliasDataSet">Documents/dsConcept</property>
+                            <property name="resultSetColumnName">concept_relevancy_score</property>
+                        </category-column>
+                        <category-column name="concept_type" id="1349">
+                            <property name="aliasDataSet">Documents/dsConcept</property>
+                            <property name="resultSetColumnName">concept_type</property>
+                        </category-column>
+                    </property>
+                </category>
+                <category name="Entity" id="1351">
+                    <property name="categoryColumns">
+                        <category-column name="entity_doc_id" id="1352">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity_doc_id</property>
+                        </category-column>
+                        <category-column name="entity_cartridge" id="1353">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity_cartridge</property>
+                        </category-column>
+                        <category-column name="entity_cartridge_name" id="1354">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity_cartridge_name</property>
+                        </category-column>
+                        <category-column name="entity" id="1355">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity</property>
+                        </category-column>
+                        <category-column name="entity_term_index" id="1356">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity_term_index</property>
+                        </category-column>
+                        <category-column name="entity_confidence_score" id="1357">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity_confidence_score</property>
+                        </category-column>
+                        <category-column name="entity_relevancy_score" id="1358">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity_relevancy_score</property>
+                        </category-column>
+                        <category-column name="entity_frequency" id="1359">
+                            <property name="aliasDataSet">Documents/dsEntity</property>
+                            <property name="resultSetColumnName">entity_frequency</property>
+                        </category-column>
+                    </property>
+                </category>
+            </property>
+            <property name="pushDown">true</property>
+        </linked-data-model>
+    </property>
+</datamart>

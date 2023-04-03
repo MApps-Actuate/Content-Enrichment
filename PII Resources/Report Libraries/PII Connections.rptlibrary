@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <property name="units">in</property>
+    <property name="theme">defaultTheme</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Pipeline" id="2">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>PostgresSupportSP</name>
+                    <value>true</value>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">org.postgresql.Driver</property>
+            <property name="odaURL">jdbc:postgresql://td-mag202.eastus.cloudapp.azure.com:8888/magellan</property>
+            <property name="odaUser">maguser</property>
+            <property name="OdaConnProfileName">Pipeline</property>
+            <property name="OdaConnProfileStorePath">PII Resources/PII Connection Profile.otconnprofiles</property>
+        </oda-data-source>
+        <data-mart-data-source name="PII Analysis" id="1579">
+            <property name="datamartURL">PII Resources/Data Objects/PII Analysis</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <themes>
+        <theme name="defaultTheme" id="4"/>
+    </themes>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="3"/>
+    </page-setup>
+</library>

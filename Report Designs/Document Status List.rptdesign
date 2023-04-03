@@ -1,0 +1,2017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <property name="units">in</property>
+    <property name="theme">ThemesReportItems31.Modern</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">120</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+        <structure>
+            <property name="fileName">Report Libraries/CE Connections.rptlibrary</property>
+            <property name="namespace">CE Connections</property>
+        </structure>
+        <structure>
+            <property name="fileName">Report Libraries/CE Themes.rptlibrary</property>
+            <property name="namespace">CE Themes</property>
+        </structure>
+    </list-property>
+    <property name="responsiveReport">true</property>
+    <parameters>
+        <scalar-parameter name="prmEnrichmentStatus" id="1594">
+            <text-property name="promptText">Process Status</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">Document Status</property>
+            <property name="preserveDatasetFilters">false</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["Status Code"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["Status Description"]</expression>
+            <expression name="sortByColumn">dataSetRow["Status Description"]</expression>
+            <property name="sortDirection">asc</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">false</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="prmEnrichmentDateRange" id="1613">
+            <property name="hidden">true</property>
+            <text-property name="promptText">Process Date Range</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="prmEnrichmentStartDate" id="1614">
+            <text-property name="promptText">Process Date Range - Start</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">date</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="prmEnrichmentEndDate" id="1615">
+            <text-property name="promptText">Process Date Range = End</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">date</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="prmMaxRows" id="1618">
+            <property name="hidden">true</property>
+            <text-property name="promptText">Maximum Number of Rows</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Pipeline" id="1578"
+ extends="CE Connections.Pipeline"/>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="Crawler" id="1579"
+ extends="CE Connections.Crawler"/>
+        <oda-data-source extensionID="com.actuate.data.oda.static" name="Static Source" id="1592"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Documents" id="1580">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">File Size Display</property>
+                    <expression name="expression" type="javascript">var val = row["File Size"]&#13;
+var absValue = Math.abs(val);&#13;
+if (absValue >= 1125899906842624) {&#13;
+	formattedValue = Formatter.format(val / 1125899906842624, "#,###.00 PB");&#13;
+} else if (absValue >= 1099511627776) {&#13;
+	formattedValue = Formatter.format(val / 1099511627776, "#,###.00 TB");&#13;
+} else if (absValue >= 1073741824) {&#13;
+	formattedValue = Formatter.format(val / 1073741824, "#,###.00 GB");&#13;
+} else if (absValue >= 1048576) {&#13;
+	formattedValue = Formatter.format(val / 1048576, "#,###.00 MB");&#13;
+} else if (absValue >= 1024) {&#13;
+	formattedValue = Formatter.format(val / 1024, "#,###.00 KB");&#13;
+} else {&#13;
+	formattedValue = Formatter.format(val, "#,### Bytes");&#13;
+}&#13;
+formattedValue;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">mime_icon_name</property>
+                    <expression name="expression" type="javascript">var fileType = "other";&#13;
+var normalizedFileType = row["File Type"];&#13;
+if (normalizedFileType) {&#13;
+    normalizedFileType = normalizedFileType.trim().toLowerCase();&#13;
+    switch (normalizedFileType) {&#13;
+	case "archives":&#13;
+	case "folder":&#13;
+	case "html":&#13;
+	case "image":&#13;
+	case "other":&#13;
+	case "pdf":&#13;
+	case "powerpoint":&#13;
+	case "video":&#13;
+	case "email":&#13;
+	case "text":&#13;
+	case "zip":&#13;
+	case "tweet":&#13;
+	    fileType = normalizedFileType;&#13;
+	    break;&#13;
+	case "ms word":&#13;
+	    fileType = "word";&#13;
+	    break;&#13;
+	case "ms excel":&#13;
+	    fileType = "excel";&#13;
+	    break;&#13;
+    }&#13;
+}&#13;
+"mime_" + fileType + ".svg";</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder</property>
+                    <expression name="expression" type="javascript">var path = "";&#13;
+if (row["Path"] != null) {&#13;
+	var folderAndIds = row["Path"].split(";");&#13;
+	for (var idx in folderAndIds) {&#13;
+		var folderAndId = folderAndIds[idx];&#13;
+		if (!folderAndId) {&#13;
+			continue;&#13;
+		}&#13;
+		var folder;&#13;
+		var firstPos = folderAndId.indexOf("\"");&#13;
+		if (firstPos > -1 &amp;&amp; firstPos + 1 &lt; folderAndId.length) {&#13;
+			var lastPos = folderAndId.indexOf("\"", firstPos + 1);&#13;
+			if (lastPos > -1) {&#13;
+				folder = folderAndId.substring(firstPos + 1, lastPos);&#13;
+			}&#13;
+		}&#13;
+		if (!folder || folder == null) {&#13;
+			continue;&#13;
+		}&#13;
+		if (path) {&#13;
+			path += " / ";&#13;
+		}&#13;
+		path += folder;&#13;
+	}&#13;
+} else {&#13;
+	path = null;&#13;
+}&#13;
+path;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">doc_id</text-property>
+                    <text-property name="heading">doc_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <text-property name="heading">repository_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Document Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <text-property name="heading">Document Name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created Date</text-property>
+                    <text-property name="heading">Created Date</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Last Modified Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                    <text-property name="heading">Last Modified Date</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Path</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Path</text-property>
+                    <text-property name="heading">Path</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">File Size</text-property>
+                    <text-property name="heading">File Size</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Last Modified Date_1</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                    <text-property name="heading">Last Modified Date</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created By</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created By</text-property>
+                    <text-property name="heading">Created By</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">direct_link</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">direct_link</text-property>
+                    <text-property name="heading">direct_link</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">File Type</text-property>
+                    <text-property name="heading">File Type</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Summary</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Summary</text-property>
+                    <text-property name="heading">Summary</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Process Status</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <text-property name="heading">Process Status</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Porcess Start Time</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Porcess Start Time</text-property>
+                    <text-property name="heading">Porcess Start Time</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Porcess End Time</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Porcess End Time</text-property>
+                    <text-property name="heading">Porcess End Time</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Language</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Language</text-property>
+                    <text-property name="heading">Language</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size Display</property>
+                    <property name="analysis">attribute</property>
+                </structure>
+                <structure>
+                    <property name="columnName">mime_icon_name</property>
+                    <property name="analysis">attribute</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Folder</property>
+                    <property name="analysis">dimension</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">dsprmEnrichmentStatus</property>
+                    <property name="paramName">prmEnrichmentStatus</property>
+                    <property name="nativeName"></property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">5</property>
+                    <property name="position">1</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Document Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Created Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Last Modified Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Path</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">File Size</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Last Modified Date_1</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Created By</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">direct_link</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">File Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">Summary</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Process Status</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">Porcess Start Time</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">Porcess End Time</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">Language</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">File Size Display</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">mime_icon_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">Folder</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[
+var processDateStartDate = null;
+var processDateEndDate = null;
+var processDateParam = params["prmEnrichmentDateRange"].value;
+if (params["prmEnrichmentStartDate"].value != null || params["prmEnrichmentEndDate"].value != null) {
+	if (params["prmEnrichmentStartDate"].value != null &amp;&amp; params["prmEnrichmentEndDate"].value != null) {
+		if (BirtDateTime.diffDay(params["prmEnrichmentStartDate"].value, params["prmEnrichmentEndDate"].value) > 0) {
+			processDateStartDate = Formatter.format(params["prmEnrichmentStartDate"].value, "yyyy-MM-dd");
+			processDateEndDate = Formatter.format(params["prmEnrichmentEndDate"].value, "yyyy-MM-dd");
+		} else {
+			processDateStartDate = Formatter.format(params["prmEnrichmentEndDate"].value, "yyyy-MM-dd");
+			processDateEndDate = Formatter.format(params["prmEnrichmentStartDate"].value, "yyyy-MM-dd");
+		}
+	} else if (params["prmEnrichmentEndDate"].value != null) {
+		processDateStartDate = Formatter.format(params["prmEnrichmentEndDate"].value, "yyyy-MM-dd");
+	} else {
+		processDateStartDate = Formatter.format(params["prmEnrichmentStartDate"].value, "yyyy-MM-dd");
+	}
+	processDateStartDate
+} else if (processDateParam != null) {
+	processDateParam.trim();
+	if (processDateParam == "") {
+		processDateParam = null;
+	} else {
+		var indexOfPipe = processDateParam.indexOf("|");
+		if (indexOfPipe > -1) {
+			processDateStartDate = processDateParam.substring(0, indexOfPipe -1).trim();
+			processDateEndDate = processDateParam.substring(indexOfPipe +1).trim();
+		} else {
+			processDateStartDate = processDateParam;
+		}
+	}
+}
+
+if (processDateStartDate  != null || processDateEndDate != null) {
+
+	 var query = this.queryText;
+	 var queryLower = query.toLowerCase();
+
+	 var query = this.queryText;
+	 var queryLower = query.toLowerCase();
+
+	 var groupByIndex = queryLower.indexOf("\ngroup by\n");
+	 if (groupByIndex == -1) {
+		 groupByIndex = queryLower.indexOf("\ngroup by\t");
+	 }
+	 if (groupByIndex == -1) {
+		 groupByIndex = queryLower.indexOf("\ngroup by");
+	 }
+	 if (groupByIndex == -1) {
+		groupByIndex = queryLower.indexOf(" group by\n");
+	 }
+	 if (groupByIndex == -1) {
+		groupByIndex = queryLower.indexOf(" group by\t");
+	 }
+	 if (groupByIndex == -1) {
+		groupByIndex = queryLower.indexOf(" group by ");
+	 }
+	 if (groupByIndex == -1) {
+		groupByIndex = queryLower.indexOf("\tgroup by\n");
+	 }
+	 if (groupByIndex == -1) {
+		groupByIndex = queryLower.indexOf("\tgroup by\t");
+	 }
+	 if (groupByIndex == -1) {
+		groupByIndex = queryLower.indexOf("\tgroup by ");
+	 }
+	 var groupByClause = "";
+	 if (groupByIndex > -1) {
+		groupByClause = query.substring(groupByIndex);
+		query = query.substring(0, (groupByIndex - 1));
+	 } 
+	 
+	 var processDateCondition = "";
+	 var whereIndex = query.indexOf("\nwhere\n");
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf("\nwhere\t");
+	 } 
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf("\nwhere ");
+	 } 
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf("\twhere\n");
+	 } 
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf("\twhere\t");
+	 } 
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf("\twhere ");
+	 } 
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf(" where\n");
+	 } 
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf(" where\t");
+	 } 
+	 if (whereIndex == -1) {
+		whereIndex = query.indexOf(" where ");
+	 } 
+	 if (whereIndex > -1) {
+		processDateCondition = " AND "
+	 } else {
+		processDateCondition = " where ";
+	 }
+	 processDateCondition += "dce.end_time"
+	 if (processDateEndDate == null) {
+	 	processDateCondition += " = '" + processDateStartDate + "'";
+	 } else {
+	 	processDateCondition += " BETWEEN '" + processDateStartDate + "' AND '" + processDateEndDate + "'";
+	 } 
+	 
+	 query += processDateCondition + " " + groupByClause;
+
+	 this.queryText = query;
+}
+
+if (params["prmMaxRows"].value != null &amp;&amp; params["prmMaxRows"].value > 0) {
+	this.queryText += " limit " + params["prmMaxRows"].value ;
+}
+]]></method>
+            <property name="dataSource">Pipeline</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">doc_id</property>
+                    <property name="nativeName">doc_id</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">repository_id</property>
+                    <property name="nativeName">repository_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Document Name</property>
+                    <property name="nativeName">Document Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">Created Date</property>
+                    <property name="nativeName">Created Date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">Last Modified Date</property>
+                    <property name="nativeName">Last Modified Date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">Path</property>
+                    <property name="nativeName">Path</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">File Size</property>
+                    <property name="nativeName">File Size</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">-5</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">Last Modified Date_1</property>
+                    <property name="nativeName">Last Modified Date</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">Created By</property>
+                    <property name="nativeName">Created By</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">direct_link</property>
+                    <property name="nativeName">direct_link</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">File Type</property>
+                    <property name="nativeName">File Type</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">Summary</property>
+                    <property name="nativeName">Summary</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">Process Status</property>
+                    <property name="nativeName">Process Status</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">5</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">Porcess Start Time</property>
+                    <property name="nativeName">Porcess Start Time</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">Porcess End Time</property>
+                    <property name="nativeName">Porcess End Time</property>
+                    <property name="dataType">date-time</property>
+                    <property name="nativeDataType">93</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">Language</property>
+                    <property name="nativeName">Language</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select
+      d.doc_id
+	, d.repository_id
+	, dma.name as "Document Name"
+	, cma.content_creation_date as "Created Date"
+	, dma.last_modification_date as "Last Modified Date"
+	, dma.path as "Path"
+	, dma.content_stream_length as "File Size"
+	, dma.last_modification_date as "Last Modified Date"
+	, dma.created_by as "Created By"
+	, dma.direct_link
+	, dma.normalized_file_type as "File Type"
+	, coalesce(cma.summary, cas.summary, null) as "Summary"
+	, dce.status as "Process Status"
+	, dce.start_time as "Porcess Start Time"
+	, dce.end_time as "Porcess End Time"
+	--, string_agg(l.name, ', ') as "Language"
+	, '<ul>' || string_agg(format('<li>%s</li>', l.name), '') || '</ul>' as "Language"
+from document d  
+        inner join document_metadata_attributes dma on (d.doc_id = dma.doc_id)
+        inner join content_metadata_attributes cma on (d.doc_id=cma.doc_id and cma.attribute_index = 1)
+		left outer join document_ce dce on (d.uid = dce.uid)
+		left outer join ca_summary cas on (d.doc_id = cas.doc_id)
+		left outer join language l on (d.doc_id = l.doc_id)
+where dce.status = ?
+ group by
+      d.doc_id
+	, d.repository_id
+	, dma.name 
+	, cma.content_creation_date
+	, dma.last_modification_date
+	, dma.path
+	, dma.content_stream_length
+	, dma.last_modification_date
+	, dma.created_by
+	, dma.direct_link
+	, dma.normalized_file_type
+	, coalesce(cma.summary, cas.summary, null) 
+	, dce.status
+	, dce.start_time
+	, dce.end_time]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>doc_id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>-5</design:nativeDataTypeCode>
+            <design:precision>19</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>doc_id</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>doc_id</design:label>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>repository_id</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>256</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>repository_id</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>repository_id</design:label>
+            <design:formattingHints>
+              <design:displaySize>256</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Document Name</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>256</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Document Name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Document Name</design:label>
+            <design:formattingHints>
+              <design:displaySize>256</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Created Date</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>13</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Created Date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Created Date</design:label>
+            <design:formattingHints>
+              <design:displaySize>13</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Last Modified Date</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>13</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Last Modified Date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Last Modified Date</design:label>
+            <design:formattingHints>
+              <design:displaySize>13</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Path</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>2048</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Path</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Path</design:label>
+            <design:formattingHints>
+              <design:displaySize>2048</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>File Size</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>-5</design:nativeDataTypeCode>
+            <design:precision>19</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>File Size</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>File Size</design:label>
+            <design:formattingHints>
+              <design:displaySize>20</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Last Modified Date</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>29</design:precision>
+            <design:scale>6</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Last Modified Date</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Last Modified Date</design:label>
+            <design:formattingHints>
+              <design:displaySize>29</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Created By</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>256</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Created By</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Created By</design:label>
+            <design:formattingHints>
+              <design:displaySize>256</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>direct_link</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>256</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>direct_link</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>direct_link</design:label>
+            <design:formattingHints>
+              <design:displaySize>256</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>File Type</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>256</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>File Type</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>File Type</design:label>
+            <design:formattingHints>
+              <design:displaySize>256</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Summary</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Summary</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Summary</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Process Status</design:name>
+              <design:position>13</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>5</design:nativeDataTypeCode>
+            <design:precision>5</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Process Status</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Process Status</design:label>
+            <design:formattingHints>
+              <design:displaySize>6</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Porcess Start Time</design:name>
+              <design:position>14</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>22</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Porcess Start Time</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Porcess Start Time</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Porcess End Time</design:name>
+              <design:position>15</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:precision>22</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Nullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>Porcess End Time</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Porcess End Time</design:label>
+            <design:formattingHints>
+              <design:displaySize>22</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="Repository" id="1582">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <text-property name="heading">repository_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">System Type</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">System Type</text-property>
+                    <text-property name="heading">System Type</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Repository Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <text-property name="heading">Repository Name</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">System Type</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Repository Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Crawler</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">repository_id</property>
+                    <property name="nativeName">repository_id</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">System Type</property>
+                    <property name="nativeName">System Type</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Repository Name</property>
+                    <property name="nativeName">Repository Name</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+	  repository_id::varchar 
+	, system_type as "System Type"
+	, trim(description) as "Repository Name"
+from if_repository]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>repository_id</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>repository_id</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>repository_id</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>System Type</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>10</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>System Type</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>System Type</design:label>
+            <design:formattingHints>
+              <design:displaySize>11</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Repository Name</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>2147483647</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Repository Name</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Repository Name</design:label>
+            <design:formattingHints>
+              <design:displaySize>2147483647</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+        <derived-data-set extensionID="com.actuate.birt.data.join" name="Documents with Repository" id="1583">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">doc_id</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">doc_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">repository_id</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">repository_id</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Document Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Document Name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created Date</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Last Modified Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Path</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Path</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">File Size</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Created By</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Created By</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">direct_link</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">direct_link</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">File Type</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Summary</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Summary</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Process Status</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Process Status</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Porcess Start Time</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Porcess Start Time</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Porcess End Time</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Porcess End Time</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">File Size Display</property>
+                    <property name="analysis">attribute</property>
+                </structure>
+                <structure>
+                    <property name="columnName">mime_icon_name</property>
+                    <property name="analysis">attribute</property>
+                </structure>
+                <structure>
+                    <property name="columnName">System Type</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">System Type</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Repository Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">dsprmEnrichmentStatus</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">5</property>
+                    <property name="position">1</property>
+                    <property name="isOptional">false</property>
+                    <property name="allowNull">false</property>
+                    <property name="isInput">true</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">doc_id</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">repository_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Document Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Created Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Last Modified Date</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Path</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">File Size</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Created By</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">direct_link</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">File Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Summary</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">Process Status</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Porcess Start Time</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">Porcess End Time</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">Language</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">File Size Display</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">mime_icon_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">Folder</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">System Type</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">Repository Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">Status Description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <simple-property-list name="inputDataSets">
+                <value>Documents</value>
+                <value>Repository</value>
+                <value>Document Status</value>
+            </simple-property-list>
+            <xml-property name="queryText"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tns:joinedDataSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.actuate.com/birt/dataset_join.xsd" xmlns:tns="http://schemas.actuate.com/birt/dataset_join.xsd">
+<tns:selectColumns>
+<tns:Column>Documents::doc_id</tns:Column>
+<tns:Column>Documents::repository_id</tns:Column>
+<tns:Column>Documents::Document Name</tns:Column>
+<tns:Column>Documents::Created Date</tns:Column>
+<tns:Column>Documents::Last Modified Date</tns:Column>
+<tns:Column>Documents::Path</tns:Column>
+<tns:Column>Documents::File Size</tns:Column>
+<tns:Column>Documents::Created By</tns:Column>
+<tns:Column>Documents::direct_link</tns:Column>
+<tns:Column>Documents::File Type</tns:Column>
+<tns:Column>Documents::Summary</tns:Column>
+<tns:Column>Documents::Process Status</tns:Column>
+<tns:Column>Documents::Porcess Start Time</tns:Column>
+<tns:Column>Documents::Porcess End Time</tns:Column>
+<tns:Column>Documents::Language</tns:Column>
+<tns:Column>Documents::File Size Display</tns:Column>
+<tns:Column>Documents::mime_icon_name</tns:Column>
+<tns:Column>Documents::Folder</tns:Column>
+<tns:Column>Repository::System Type</tns:Column>
+<tns:Column>Repository::Repository Name</tns:Column>
+<tns:Column>Document Status::Status Description</tns:Column>
+</tns:selectColumns>
+<tns:joins>
+<tns:startingDataSet Index="0" name="Documents"/>
+<tns:join>
+<tns:type>leftOuter</tns:type>
+<tns:dataSet Index="1" name="Repository"/>
+<tns:on>
+<tns:condition>
+<tns:leftColumn>Documents::repository_id</tns:leftColumn>
+<tns:rightColumn>Repository::repository_id</tns:rightColumn>
+<tns:operator>eq</tns:operator>
+</tns:condition>
+</tns:on>
+</tns:join>
+<tns:join>
+<tns:type>leftOuter</tns:type>
+<tns:dataSet Index="2" name="Document Status"/>
+<tns:on>
+<tns:condition>
+<tns:leftColumn>Documents::Process Status</tns:leftColumn>
+<tns:rightColumn>Document Status::Status Code</tns:rightColumn>
+<tns:operator>eq</tns:operator>
+</tns:condition>
+</tns:on>
+</tns:join>
+</tns:joins>
+</tns:joinedDataSet>]]></xml-property>
+        </derived-data-set>
+        <oda-data-set extensionID="com.actuate.data.oda.static.dataSet" name="Document Status" id="1593">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Status Code</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">Status Code</text-property>
+                    <text-property name="heading">Status Code</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Status Description</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">Status Description</text-property>
+                    <text-property name="heading">Status Description</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Status Code</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Status Description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Static Source</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Status Code</property>
+                    <property name="nativeName">Status Code</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Status Description</property>
+                    <property name="nativeName">Status Description</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">1</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[{"Columns":["Status Code","Status Description"],"Types":[3,1]}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Status Code</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>3</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Status Code</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Status Code</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Status Description</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>1</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+            <design:uiHints>
+              <design:displayName>Status Description</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Status Description</design:label>
+            <design:formattingHints>
+              <design:displaySize>-1</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>DATA</name>
+                    <value>[["0","Not Started"],["-1","Not Ready for Enrichment"],["1","In Progress"],["2","Successfully Completed"],["3","Failed"]]</value>
+                </ex-property>
+            </list-property>
+        </oda-data-set>
+    </data-sets>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">auto</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table name="Documents List" id="1302">
+            <list-property name="userProperties">
+                <structure>
+                    <property name="name">__ac_group_collapse_level</property>
+                    <property name="type">string</property>
+                </structure>
+            </list-property>
+            <property name="dataSet">Documents with Repository</property>
+            <property name="theme">CE Themes.Table-OpenText_PS_Light_Primary</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">doc_id</property>
+                    <text-property name="displayName">doc_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["doc_id"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">repository_id</property>
+                    <text-property name="displayName">repository_id</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["repository_id"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Document Name</property>
+                    <text-property name="displayName">Document Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Document Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Created Date</property>
+                    <text-property name="displayName">Created Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Created Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Created By</property>
+                    <text-property name="displayName">Created By</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Created By"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Last Modified Date</property>
+                    <text-property name="displayName">Last Modified Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Last Modified Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Path</property>
+                    <text-property name="displayName">Path</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Path"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">File Size</property>
+                    <text-property name="displayName">File Size</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["File Size"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">direct_link</property>
+                    <text-property name="displayName">direct_link</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["direct_link"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">File Type</property>
+                    <text-property name="displayName">File Type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["File Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Summary</property>
+                    <text-property name="displayName">Summary</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Summary"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Process Status</property>
+                    <text-property name="displayName">Process Status</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Process Status"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Porcess Start Time</property>
+                    <text-property name="displayName">Porcess Start Time</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Porcess Start Time"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Porcess End Time</property>
+                    <text-property name="displayName">Porcess End Time</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Porcess End Time"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">File Size Display</property>
+                    <text-property name="displayName">File Size Display</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["File Size Display"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">mime_icon_name</property>
+                    <text-property name="displayName">mime_icon_name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["mime_icon_name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">System Type</property>
+                    <text-property name="displayName">System Type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["System Type"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Repository Name</property>
+                    <text-property name="displayName">Repository Name</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Repository Name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Folder</property>
+                    <text-property name="displayName">Folder</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Folder"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Language</property>
+                    <text-property name="displayName">Language</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Language"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Status Description</property>
+                    <text-property name="displayName">Status Description</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Status Description"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <column id="1351"/>
+            <header>
+                <row id="1533">
+                    <property name="height">0px</property>
+                    <cell id="1534">
+                        <image id="1536">
+                            <property name="display">none</property>
+                            <property name="height">20px</property>
+                            <property name="width">20px</property>
+                            <expression name="altText">"Show More"</expression>
+                            <property name="source">file</property>
+                            <expression name="uri" type="constant">Images/arrow-alt-circle-down.svg</expression>
+                        </image>
+                        <image id="1537">
+                            <property name="display">none</property>
+                            <property name="height">20px</property>
+                            <property name="width">20px</property>
+                            <expression name="altText">"Show Less"</expression>
+                            <property name="source">file</property>
+                            <expression name="uri" type="constant">Images/arrow-alt-circle-up.svg</expression>
+                        </image>
+                        <text id="1508">
+                            <property name="display">none</property>
+                            <property name="contentType">html</property>
+                            <text-property name="content"><![CDATA[<div id="docSummaryScript"></div>
+
+<script>
+
+//$('*[iid="/0.1508"]').closest("tr").hide();
+$("#docSummaryScript").closest('tr').hide();
+
+var docSummaryExpandLength = 250;
+function showMoreDocSummary(imageIcon) {
+	//debugger;
+	var docSummary = $(imageIcon).parent().data("doc_summary_full");
+	if (!docSummary) {
+		return;
+	}
+	$(imageIcon).parent().html("<span> " + docSummary + "</span>" +  docSummaryLessControl);
+}
+
+function showLessDocSummary(imageIcon) {
+	//debugger;
+	var docSummary = $(imageIcon).parent().data("doc_summary_full");
+	if (!docSummary) {
+		return;
+	}
+	$(imageIcon).parent().html("<span> " + docSummary.substring(0, docSummaryExpandLength) + "...</span>" +  docSummaryMoreControl)
+}
+
+</script>
+<script>
+
+//debugger;
+
+$("<style type='text/css'> .docSummaryMoreIcon { width:15px; height:15px;} .docSummaryMoreIcon:hover {cursor: pointer;} .docSummaryLessIcon { width:15px; height:15px;} .docSummaryLessIcon:hover {cursor: pointer;} .docMimeIcon {height:18px; width:18px;} .reportul ul { margin: 0;  padding-top:0;padding-bottom:0;}  .reportul li { margin: 0;  padding-top:0;padding-bottom:0;} .reportulnobullet ul { margin: 0;  padding-top:0;padding-bottom:0; padding-left: 0; list-style: none} .reportulnobullet li { margin: 0;  padding-top: 0; padding-bottom: 0; }</style>").appendTo("head");
+
+var images = $("#docSummaryScript").closest('tr').find("img");
+var i = 0;
+var docSummaryMoreImage;
+var docSummaryLessImage
+for (i = 0; i < images.length; i++) {
+    if ($(images[i]).attr("alt") === "Show More") {
+        docSummaryMoreImage = $(images[i]);
+    } else if ($(images[i]).attr("alt") === "Show Less") {
+        docSummaryLessImage = $(images[i]);
+    }
+}
+var docSummaryMoreControl = "<img src='" + $(docSummaryMoreImage).attr("src") + "' class='docSummaryMoreIcon' onclick='showMoreDocSummary(this);'>";
+var docSummaryLessControl = "<img src='" + $(docSummaryLessImage).attr("src") + "' class='docSummaryMoreIcon' onclick='showLessDocSummary(this);'>";
+
+// Find the Summary controls by the elementID (specified in the control)
+//var summaryControls = $('*[iid="/0.1431"]');
+var summaryControls = $('*[element_name="docSummaryHolder"]').parent().next();
+
+for (i = 0; i < summaryControls.length; i++) {
+		if (!$(summaryControls[i]).data("doc_summary_full")) {
+		var docSummary = $(summaryControls[i]).text()
+		$(summaryControls[i]).data("doc_summary_full", docSummary);
+		if (docSummary.length > docSummaryExpandLength) {
+			$(summaryControls[i]).html("<span> " + docSummary.substring(0, docSummaryExpandLength) + "...</span>" +  docSummaryMoreControl)
+			//$(summaryControls[i]).append(docSummaryMoreControl);
+		}
+	}
+}
+// Pad grid entries
+//$('*[iid="/0.1487"]').children('.gridCell').css("padding", "5px");
+// Link to Document Detail
+var grids = $('*[element_name="docSummaryHolder"]').closest('[element_type="Grid"]');
+// Is this in Dashboard. Dashboard uses table for Grid.
+var isTable = $(grids[0]).prop('nodeName') === "TABLE";
+if (isTable) {
+	$(grids).find("tr").children().css("padding", "5px")
+} else {
+	$(grids).children('.gridCell').css("padding", "5px");
+}
+var docNameControl;
+for (i = 0; i < grids.length; i++) {
+
+    if (isTable) {
+    	docNameControl = $(grids[i]).find("td").first();
+    } else {
+    	docNameControl = $(grids[i]).children().first();
+    }
+    $(docNameControl).css({"cursor" :"pointer"});
+    
+    if (isTable) {
+        $(docNameControl).find("span").css({"line-height" : "20px", "vertical-align": "middle"});
+    } else {
+        $(docNameControl).find("span").css({"line-height" : "20px", "vertical-align": "top"});
+    }
+
+    $(docNameControl).on("click", function() {
+    var loc = "";
+	regex = /Applications\/(.*?)\/Dashboards/;
+	if (regex.test(window.location.href)) {
+		loc = regex.exec(window.location.href)[1];
+	}
+	else {
+		regex = /Applications%2f(.*?)%2fDashboards/;
+		if (regex.test(window.location.href)) {
+			loc = regex.exec(window.location.href)[1];
+		}
+		else {
+			console.log (window.location.href);
+			//debugger;
+			//alert ('Error ' + window.location.href);
+		}
+	}
+	url = "/iportal/executereport.do?__requesttype=immediate&amp;invokesubmit=true&amp;__executablename=/Applications/" + loc + "/Report Designs/Document Detail.rptdesign&amp;pDocId=" + $(this).closest("tr")[0].id.split('_')[1];
+	win = window.open(url, '_blank');
+	win.focus(); 
+  });
+	
+}
+
+</script>]]></text-property>
+                        </text>
+                    </cell>
+                </row>
+            </header>
+            <group id="1596">
+                <property name="groupName">grpProcessStatus</property>
+                <expression name="keyExpr" type="javascript">row["Process Status"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue" type="javascript">row["Process Status"]</expression>
+                </structure>
+                <property name="hideDetail">false</property>
+                <header>
+                    <row id="1597">
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">html</property>
+                                <expression name="valueExpr" type="javascript">true</expression>
+                            </structure>
+                        </list-property>
+                        <cell id="1598">
+                            <grid id="1602">
+                                <column id="1603"/>
+                                <column id="1604"/>
+                                <row id="1605">
+                                    <cell id="1606">
+                                        <label id="1609">
+                                            <text-property name="text">Process Status:</text-property>
+                                        </label>
+                                    </cell>
+                                    <cell id="1607">
+                                        <data id="1601">
+                                            <property name="resultSetColumn">Status Description</property>
+                                        </data>
+                                    </cell>
+                                </row>
+                            </grid>
+                        </cell>
+                    </row>
+                </header>
+            </group>
+            <detail>
+                <row id="1482">
+                    <expression name="bookmark" type="javascript">row["doc_id"]</expression>
+                    <cell id="1483">
+                        <grid id="1487">
+                            <property name="borderBottomColor">#337AB7</property>
+                            <property name="borderBottomStyle">solid</property>
+                            <property name="borderBottomWidth">thin</property>
+                            <property name="borderLeftColor">#337AB7</property>
+                            <property name="borderLeftStyle">solid</property>
+                            <property name="borderLeftWidth">thin</property>
+                            <property name="borderRightColor">#337AB7</property>
+                            <property name="borderRightStyle">solid</property>
+                            <property name="borderRightWidth">thin</property>
+                            <column id="1488"/>
+                            <column id="1490">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1522">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1526">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1518">
+                                <property name="textAlign">left</property>
+                            </column>
+                            <column id="1491"/>
+                            <row id="1492">
+                                <property name="backgroundColor">#B0C4DE</property>
+                                <property name="verticalAlign">middle</property>
+                                <cell id="1493">
+                                    <property name="colSpan">4</property>
+                                    <property name="rowSpan">1</property>
+                                    <image id="1576">
+                                        <property name="display">inline</property>
+                                        <property name="height">18px</property>
+                                        <property name="width">18px</property>
+                                        <property name="source">file</property>
+                                        <expression name="uri" type="javascript">"images/" + row["mime_icon_name"]</expression>
+                                    </image>
+                                    <data id="1577">
+                                        <property name="fontSize">16px</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">Document Name</property>
+                                    </data>
+                                </cell>
+                                <cell id="1515">
+                                    <label id="1527">
+                                        <property name="display">inline</property>
+                                        <list-property name="visibility">
+                                            <structure>
+                                                <property name="format">all</property>
+                                                <expression name="valueExpr" type="javascript">true</expression>
+                                            </structure>
+                                        </list-property>
+                                        <text-property name="text">Size: </text-property>
+                                    </label>
+                                    <data id="1334">
+                                        <property name="textAlign">left</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">File Size Display</property>
+                                    </data>
+                                </cell>
+                                <cell id="1496">
+                                    <label id="1528">
+                                        <property name="display">inline</property>
+                                        <text-property name="text">Last Modified :</text-property>
+                                    </label>
+                                    <data id="1330">
+                                        <property name="paddingLeft">3pt</property>
+                                        <structure name="dateTimeFormat">
+                                            <property name="category">Medium Date</property>
+                                            <property name="pattern">Medium Date</property>
+                                        </structure>
+                                        <property name="textAlign">left</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">Last Modified Date</property>
+                                    </data>
+                                </cell>
+                            </row>
+                            <row id="1497">
+                                <cell id="1498">
+                                    <property name="colSpan">4</property>
+                                    <property name="rowSpan">1</property>
+                                    <text id="1514">
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[<span style="line-height:16px; vertical-align: middle;"><VALUE-OF>row["Repository Name"]</VALUE-OF></span><img src="images/chevron-right.png" style="line-height:16px; vertical-align: middle;"></img><span></span><span style="line-height:16px; vertical-align: middle;"><VALUE-OF>row["Folder"]</VALUE-OF></span>]]></text-property>
+                                    </text>
+                                </cell>
+                                <cell id="1516">
+                                    <label id="1530">
+                                        <property name="display">inline</property>
+                                        <list-property name="visibility">
+                                            <structure>
+                                                <property name="format">all</property>
+                                                <expression name="valueExpr" type="javascript">true</expression>
+                                            </structure>
+                                        </list-property>
+                                        <text-property name="text">Language: </text-property>
+                                    </label>
+                                    <text-data id="1588">
+                                        <property name="display">inline</property>
+                                        <expression name="valueExpr">"&lt;div class='reportulnobullet'>" + (row["Language"] == null ? "" : row["Language"]) + "&lt;/div>"</expression>
+                                        <property name="contentType">html</property>
+                                    </text-data>
+                                </cell>
+                                <cell id="1501">
+                                    <label id="1529">
+                                        <property name="display">inline</property>
+                                        <text-property name="text">Owner: </text-property>
+                                    </label>
+                                    <data id="1332">
+                                        <property name="textAlign">left</property>
+                                        <property name="display">inline</property>
+                                        <property name="resultSetColumn">Created By</property>
+                                    </data>
+                                </cell>
+                            </row>
+                            <row id="1502">
+                                <cell id="1503">
+                                    <property name="colSpan">6</property>
+                                    <property name="rowSpan">1</property>
+                                    <text id="1535">
+                                        <property name="display">none</property>
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[<span element_name="docSummaryHolder">&amp;nbsp;</span>]]></text-property>
+                                    </text>
+                                    <data id="1589">
+                                        <property name="resultSetColumn">Summary</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </grid>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="1610">
+                    <list-property name="visibility">
+                        <structure>
+                            <property name="format">all</property>
+                            <expression name="valueExpr" type="javascript">row.__rownum > 0</expression>
+                        </structure>
+                    </list-property>
+                    <cell id="1611">
+                        <label id="1612">
+                            <text-property name="text">No document found for selected criteria</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

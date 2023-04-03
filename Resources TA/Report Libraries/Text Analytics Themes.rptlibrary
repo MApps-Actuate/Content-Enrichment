@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.11.0.v202101151752</property>
+    <property name="units">in</property>
+    <property name="theme">defaultTheme</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems31.rptlibrary</property>
+            <property name="namespace">ThemesReportItems31</property>
+        </structure>
+    </list-property>
+    <themes>
+        <report-item-theme type="Chart" name="Chart-OpenText_PS_Light_Primary" id="71049">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" unitSpacing="15.0">
+  <block>
+   <children _type="TitleBlock" anchor="7">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Lato" size="14.0"/>
+      <color _body=",255,51,51,51"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Lato" size="10.0"/>
+     <color _body=",255,0,0,0"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <caption>
+      <font name="Lato" size="10.0"/>
+      <color _body=",255,0,0,0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="enable.legend.circle" value="true"/>
+  <extendedProperties name="enable.legend.itemHoverStyle" value="#000000"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.client.script" value="/**&amp;#13;&amp;#10; * Called before chart instance is initially created.&amp;#13;&amp;#10; *&amp;#13;&amp;#10; * @param options&amp;#13;&amp;#10; *            chart options&amp;#13;&amp;#10; */&amp;#13;&amp;#10;beforeGeneration: function(options)&amp;#13;&amp;#10;{&amp;#13;&amp;#10;    var numberFormatter = function (value, decimalPlaces) {&amp;#13;&amp;#10;        var absValue = Math.abs(value);&amp;#13;&amp;#10;        var formattedValue = &amp;quot;&amp;quot;;&amp;#13;&amp;#10;        if (absValue &amp;gt;= 1000000000000) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1000000000000, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; T&amp;quot;;&amp;#13;&amp;#10;        } else if (absValue &amp;gt;= 1000000000) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1000000000, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; B&amp;quot;;&amp;#13;&amp;#10;        } else if (absValue &amp;gt;= 1000000) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1000000, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; M&amp;quot;;&amp;#13;&amp;#10;        } else if (absValue &amp;gt;= 1000) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1000, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; K&amp;quot;;&amp;#13;&amp;#10;        } else {&amp;#13;&amp;#10;            if ((value ^ 0) === value) {&amp;#13;&amp;#10;                formattedValue = value;&amp;#13;&amp;#10;            } else {&amp;#13;&amp;#10;                formattedValue = Highcharts.numberFormat(value, decimalPlaces);&amp;#13;&amp;#10;            }&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return formattedValue;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    fileSizeFormatter = function(value, decimalPlaces) {&amp;#13;&amp;#10;        var absValue = Math.abs(value);&amp;#13;&amp;#10;        var formattedValue = &amp;quot;&amp;quot;;&amp;#13;&amp;#10;        if (absValue &amp;gt;= 1125899906842624) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1125899906842624, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; PB&amp;quot;;&amp;#13;&amp;#10;        } else if (absValue &amp;gt;= 1099511627776) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1099511627776, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; TB&amp;quot;;&amp;#13;&amp;#10;        } else if (absValue &amp;gt;= 1073741824) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1073741824, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; GB&amp;quot;;&amp;#13;&amp;#10;        } else if (absValue &amp;gt;= 1048576) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1048576, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; MB&amp;quot;;&amp;#13;&amp;#10;        } else if (absValue &amp;gt;= 1024) {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value / 1024, decimalPlaces);&amp;#13;&amp;#10;            formattedValue = formattedValue + &amp;quot; KB&amp;quot;;&amp;#13;&amp;#10;        } else {&amp;#13;&amp;#10;            formattedValue = Highcharts.numberFormat(value, 0);&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return formattedValue;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;&amp;#13;&amp;#10;    // Y Axis Format&amp;#13;&amp;#10;    numberformatterAxisDP = 0;&amp;#13;&amp;#10;    var numberformatterAxis = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(numberformatterAxisDP);&amp;#13;&amp;#10;        return numberFormatter(this.value, numberformatterAxisDP);&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    fileSizeformatterAxis = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(numberformatterAxisDP);&amp;#13;&amp;#10;        return fileSizeFormatter(this.value, numberformatterAxisDP);&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    // Set the Number formatter as the default formatter&amp;#13;&amp;#10;    if (options.yAxis &amp;amp;&amp;amp; options.yAxis.length) {&amp;#13;&amp;#10;        for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;        if (options.yAxis[i].labels.format) {&amp;#13;&amp;#10;                // format is defined, don&amp;#039;t set a formatter&amp;#13;&amp;#10;            } else {&amp;#13;&amp;#10;                options.yAxis[i].labels.formatter = numberformatterAxis;&amp;#13;&amp;#10;            }&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    &amp;#13;&amp;#10;    // &amp;#13;&amp;#10;    // Data Label&amp;#13;&amp;#10;    //&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    &amp;#13;&amp;#10;    // Define number formatters&amp;#13;&amp;#10;    numberFormatterDataLabelDP = 0;&amp;#13;&amp;#10;    var numberFormatterDataLabel = function () {&amp;#13;&amp;#10;        return numberFormatter(this.y, numberFormatterDataLabelDP);&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    fileSizeFormatterDataLabel = function () {&amp;#13;&amp;#10;        return fileSizeFormatter(this.y, numberFormatterDataLabelDP);&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;&amp;#13;&amp;#10;    // Set the number formatter as default formatter&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        //options.series[i].dataLabels.enabled = true;&amp;#13;&amp;#10;        options.series[i].dataLabels.formatter = numberFormatterDataLabel;&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    // Display Data labels in White without shadow &amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        options.series[i].dataLabels.color = &amp;#039;contrast&amp;#039;;&amp;#13;&amp;#10;        if (options.series[i].dataLabels.style === undefined) {&amp;#13;&amp;#10;            options.series[i].dataLabels.style = {};&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }	&amp;#13;&amp;#10;    &amp;#13;&amp;#10;},"/>
+  <extendedProperties name="jschart.animation" value="true"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <caption>
+     <font name="Lato" size="12.0" bold="false"/>
+     <color _body=",255,51,51,51"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <caption>
+      <font name="Lato" size="12.0" bold="false"/>
+      <color _body=",255,51,51,51"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,47,78,209"/>
+      <entries _body=",255,0,131,131"/>
+      <entries _body=",255,224,162,0"/>
+      <entries _body=",255,120,0,80"/>
+      <entries _body=",255,79,54,144"/>
+      <entries _body=",255,88,100,173"/>
+      <entries _body=",255,38,59,184"/>
+      <entries _body=",255,57,184,72"/>
+      <entries _body=",255,0,88,115"/>
+      <entries _body=",255,0,184,186"/>
+      <entries _body=",255,130,139,193"/>
+      <entries _body=",255,168,0,61"/>
+      <entries _body=",255,6,125,20"/>
+      <entries _body=",255,0,132,206"/>
+      <entries _body=",255,0,99,83"/>
+      <entries _body=",255,123,154,176"/>
+      <entries _body=",255,105,148,47"/>
+      <entries _body=",255,240,88,34"/>
+      <entries _body=",255,223,51,36"/>
+      <entries _body=",255,167,38,27"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <caption>
+        <font name="Lato" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition=""/>
+      <dataPoint prefix="" separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <riserOutline _body=",0,255,255,255"/>
+     </series>
+     <series _type="LineSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Lato" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="3" visible="true">
+       <outline visible="false"/>
+      </markers>
+      <lineAttributes thickness="1">
+       <color _body=",255,255,255,255"/>
+      </lineAttributes>
+      <shadowColor _body=",0,255,255,255"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="" stacked="false" curve="true">
+      <label>
+       <caption>
+        <font name="Lato" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="3" visible="true">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="2" visible="true">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label visible="true">
+       <caption>
+        <font name="Lato" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes visible="true">
+       <color _body=",255,85,85,85"/>
+      </leaderLineAttributes>
+      <sliceOutline _body=",255,255,255,255"/>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <caption>
+         <font name="Lato"/>
+        </caption>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Lato" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="3">
+       <outline visible="false"/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Lato" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Lato" size="10.0"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="" curve="false">
+      <label>
+       <caption>
+        <font name="Lato"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers type="3" visible="true">
+       <outline visible="false"/>
+      </markers>
+      <lineAttributes thickness="2" visible="true">
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Lato"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <caption>
+        <font name="Lato"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="" fillPolys="true">
+      <label>
+       <caption>
+        <font name="Lato">
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker type="3" size="3" visible="true">
+       <outline/>
+      </marker>
+      <lineAttributes thickness="2" visible="true"/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font name="Lato">
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font name="Lato">
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes visible="false">
+     <color _body=",255,85,85,85"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Lato" size="10.0"/>
+      <color _body=",255,51,51,51"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes visible="false">
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes visible="false">
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <scale autoExpand="true"/>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption>
+      <font name="Lato"/>
+      <color _body=",255,51,51,51"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,51,51,51"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Lato" size="10.0"/>
+      <color _body=",255,51,51,51"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,47,78,209"/>
+     <entries _body=",255,0,131,131"/>
+     <entries _body=",255,224,162,0"/>
+     <entries _body=",255,120,0,80"/>
+     <entries _body=",255,79,54,144"/>
+     <entries _body=",255,88,100,173"/>
+     <entries _body=",255,38,59,184"/>
+     <entries _body=",255,57,184,72"/>
+     <entries _body=",255,0,88,115"/>
+     <entries _body=",255,0,184,186"/>
+     <entries _body=",255,130,139,193"/>
+     <entries _body=",255,168,0,61"/>
+     <entries _body=",255,6,125,20"/>
+     <entries _body=",255,0,132,206"/>
+     <entries _body=",255,0,99,83"/>
+     <entries _body=",255,123,154,176"/>
+     <entries _body=",255,105,148,47"/>
+     <entries _body=",255,240,88,34"/>
+     <entries _body=",255,223,51,36"/>
+     <entries _body=",255,167,38,27"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition=""/>
+     <curveFitting _nil="1"/>
+    </series>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _body=",255,85,85,85"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Lato" size="10.0"/>
+     <color _body=",255,51,51,51"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <scale showOutside="false" tickBetweenCategories="false"/>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <theme name="defaultTheme" id="4"/>
+        <report-item-theme type="Table" name="Table-OpenText_PS_Light_Primary" id="8">
+            <styles>
+                <style name="table" id="9">
+                    <property name="fontFamily">"Lato"</property>
+                    <property name="fontSize">13px</property>
+                    <property name="color">#000000</property>
+                    <property name="borderBottomColor">#DCE4E8</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DCE4E8</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DCE4E8</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DCE4E8</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-group-header-cell" id="12">
+                    <property name="fontFamily">"Lato"</property>
+                    <property name="fontSize">14px</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#000000</property>
+                    <property name="borderBottomColor">#DCE4E8</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DCE4E8</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DCE4E8</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DCE4E8</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="paddingTop">2px</property>
+                    <property name="paddingLeft">3px</property>
+                    <property name="paddingBottom">2px</property>
+                    <property name="paddingRight">3px</property>
+                </style>
+                <style name="table-detail-cell" id="13">
+                    <property name="fontFamily">"Lato"</property>
+                    <property name="fontSize">13px</property>
+                    <property name="borderBottomColor">#DCE4E8</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DCE4E8</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DCE4E8</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DCE4E8</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="paddingTop">5px</property>
+                    <property name="paddingLeft">5px</property>
+                    <property name="paddingBottom">5px</property>
+                    <property name="paddingRight">5px</property>
+                </style>
+                <style name="table-header-cell" id="14">
+                    <property name="backgroundColor">#E7EDF8</property>
+                    <property name="fontFamily">"Lato"</property>
+                    <property name="fontSize">16px</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="borderBottomColor">#DCE4E8</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DCE4E8</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DCE4E8</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DCE4E8</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="paddingTop">5px</property>
+                    <property name="paddingLeft">5px</property>
+                    <property name="paddingBottom">5px</property>
+                    <property name="paddingRight">5px</property>
+                </style>
+                <style name="table-cell" id="946">
+                    <property name="fontFamily">"Lato"</property>
+                    <property name="fontSize">13px</property>
+                    <property name="paddingTop">5px</property>
+                    <property name="paddingLeft">5px</property>
+                    <property name="paddingBottom">5px</property>
+                    <property name="paddingRight">5px</property>
+                </style>
+                <style name="table-footer-cell" id="947">
+                    <property name="backgroundColor">#F3F6FB</property>
+                    <property name="fontFamily">"Lato"</property>
+                    <property name="fontSize">13px</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="borderBottomColor">#DCE4E8</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DCE4E8</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DCE4E8</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DCE4E8</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="paddingTop">5px</property>
+                    <property name="paddingLeft">5px</property>
+                    <property name="paddingBottom">5px</property>
+                    <property name="paddingRight">5px</property>
+                </style>
+                <style name="table-group-footer-cell" id="948">
+                    <property name="backgroundColor">#F3F6FB</property>
+                    <property name="fontFamily">"Lato"</property>
+                    <property name="fontSize">13px</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="borderBottomColor">#DCE4E8</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DCE4E8</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DCE4E8</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DCE4E8</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="paddingTop">5px</property>
+                    <property name="paddingLeft">5px</property>
+                    <property name="paddingBottom">5px</property>
+                    <property name="paddingRight">5px</property>
+                </style>
+            </styles>
+        </report-item-theme>
+        <theme name="OpenText_PS_Light_Primary" id="71050"/>
+    </themes>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="3"/>
+    </page-setup>
+</library>
